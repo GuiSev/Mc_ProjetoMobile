@@ -1,0 +1,21 @@
+object frmBase: TfrmBase
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object aclActions: TActionList
+    Left = 528
+    Top = 24
+  end
+  object imlButtonIcons: TImageList
+    Source = <>
+    Destination = <>
+    Left = 428
+    Top = 24
+  end
+end

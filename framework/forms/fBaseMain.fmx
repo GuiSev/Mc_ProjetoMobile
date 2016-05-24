@@ -1,0 +1,23 @@
+inherited frmBaseMain: TfrmBaseMain
+  Caption = 'frmBase1'
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar [0]
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'toolbarstyle'
+    TabOrder = 2
+    object Button1: TButton
+      Align = Left
+      Size.Width = 80.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'detailstoolbutton'
+      TabOrder = 0
+      Text = 'Button1'
+    end
+  end
+  inherited aclActions: TActionList
+    Left = 544
+  end
+end

@@ -1,0 +1,4 @@
+inherited frmBaseDataMasterDetail: TfrmBaseDataMasterDetail
+  Caption = 'frmBaseData1'
+  DesignerMasterStyle = 0
+end

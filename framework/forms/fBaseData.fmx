@@ -1,0 +1,68 @@
+inherited frmBaseData: TfrmBaseData
+  Caption = 'frmBase1'
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object tmrUpdate: TTimer [0]
+    OnTimer = tmrUpdateTimer
+    Left = 48
+    Top = 104
+  end
+  inherited aclActions: TActionList
+    Left = 56
+    Top = 16
+    object actInsert: TAction
+      Text = '&Incluir'
+      OnExecute = actInsertExecute
+      OnUpdate = actInsertUpdate
+    end
+    object actUpdate: TAction
+      Text = '&Alterar'
+      OnExecute = actUpdateExecute
+      OnUpdate = actUpdateUpdate
+    end
+    object actDelete: TAction
+      Text = '&Excluir'
+      OnExecute = actDeleteExecute
+      OnUpdate = actDeleteUpdate
+    end
+    object actSave: TAction
+      Text = '&Salvar'
+      OnExecute = actSaveExecute
+      OnUpdate = actSaveUpdate
+    end
+    object actCancel: TAction
+      Text = '&Cancelar'
+      OnExecute = actCancelExecute
+      OnUpdate = actCancelUpdate
+    end
+    object actIPrint: TAction
+      Text = 'Im&primir'
+      OnExecute = actIPrintExecute
+      OnUpdate = actIPrintUpdate
+    end
+    object actClose: TAction
+      Text = 'Sai&r'
+      OnExecute = actCloseExecute
+      OnUpdate = actCloseUpdate
+    end
+    object actClone: TAction
+      Text = '&Duplicar'
+      OnExecute = actCloneExecute
+      OnUpdate = actCloneUpdate
+    end
+    object actSearch: TAction
+      Text = 'Search'
+      OnExecute = actSearchExecute
+    end
+  end
+  object dtsDados: TDataSource
+    Left = 232
+    Top = 16
+  end
+  object bsdDataBind: TBindSourceDB
+    DataSource = dtsDados
+    ScopeMappings = <>
+    Left = 328
+    Top = 16
+  end
+end

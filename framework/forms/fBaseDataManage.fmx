@@ -1,0 +1,309 @@
+inherited frmBaseDataManage: TfrmBaseDataManage
+  Caption = 'frmBaseData1'
+  ClientHeight = 488
+  ClientWidth = 730
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object tlbTop: TToolBar [1]
+    Size.Width = 730.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object lblTitle: TLabel
+      Align = Contents
+      Size.Width = 730.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Manuten'#231#227'o'
+    end
+  end
+  object gplLayout: TGridPanelLayout [2]
+    Align = Client
+    Size.Width = 730.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    ColumnCollection = <
+      item
+        Value = 24.242424242424240000
+      end
+      item
+        Value = 75.757575757575770000
+      end>
+    ControlCollection = <
+      item
+        Column = 1
+        Control = Layout1
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = lbxTools
+        Row = 0
+      end>
+    RowCollection = <
+      item
+        Value = 100.000000000000000000
+      end
+      item
+        SizeStyle = Auto
+      end>
+    object Layout1: TLayout
+      Align = Client
+      Size.Width = 553.030273437500000000
+      Size.Height = 440.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      object edtSearch: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        StyleLookup = 'searchedit'
+        TabOrder = 1
+        Size.Width = 553.030273437500000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Digite sua pesquisa aqui...'
+        OnTyping = actSearchExecute
+      end
+      object sgbSearch: TStringGrid
+        Align = Client
+        Size.Width = 553.030273437500000000
+        Size.Height = 255.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'gridstyle'
+        TabOrder = 2
+        Options = [ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick]
+        RowCount = 100
+        RowHeight = 21.000000000000000000
+        Viewport.Width = 549.000000000000000000
+        Viewport.Height = 230.000000000000000000
+      end
+      object expAdvancedSearch: TExpander
+        Align = Top
+        Position.Y = 32.000000000000000000
+        ShowCheck = True
+        Size.Width = 553.030273437500000000
+        Size.Height = 153.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Pesquisa avan'#231'ada '
+        TabOrder = 0
+        ContentSize = '128'
+        object flyAdvancedSearch: TFlowLayout
+          Align = Client
+          Size.Width = 553.030273437500000000
+          Size.Height = 128.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Justify = Left
+          JustifyLastLine = Left
+          FlowDirection = LeftToRight
+          object cbxFieldSearch: TComboBox
+            Anchors = []
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 40.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 40.000000000000000000
+            Size.Width = 137.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            object lblFieldSearch: TLabel
+              Position.Y = -31.000000000000000000
+              Size.Width = 169.000000000000000000
+              Size.Height = 23.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Campo'
+            end
+          end
+          object cbxConditionSearch: TComboBox
+            Anchors = []
+            Items.Strings = (
+              '=                         (Igualdade)'
+              'like '#39'%%'#39'             (Semelhante)'
+              '>                         (Maior que ) '
+              '<                         (Menor que ) '
+              '>=                      (Maior igual que ) '
+              '=<                      (Menor igual  que )'
+              'IN  ('#39'#'#39','#39'#'#39')          (Cont'#233'm)'
+              'NOT IN  ('#39'#'#39','#39'#'#39')  (N'#227'o Cont'#233'm)'
+              'OR                       (Ou) ')
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 40.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 167.000000000000000000
+            Position.Y = 40.000000000000000000
+            Size.Width = 153.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object lblConditionSearch: TLabel
+              Position.Y = -31.000000000000000000
+              Size.Width = 169.000000000000000000
+              Size.Height = 23.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Condi'#231#227'o'
+            end
+          end
+          object cbxFilterSearch: TComboBox
+            Anchors = []
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 40.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 340.000000000000000000
+            Position.Y = 40.000000000000000000
+            Size.Width = 153.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object lblFilterSearch: TLabel
+              Position.Y = -31.000000000000000000
+              Size.Width = 169.000000000000000000
+              Size.Height = 23.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Valor do Filtro'
+              object btnAddSearchFilter: TButton
+                Position.X = 168.000000000000000000
+                Position.Y = 24.000000000000000000
+                Size.Width = 48.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'additembutton'
+                TabOrder = 0
+                Text = 'btnAddSearchFilter'
+                OnClick = btnAddSearchFilterClick
+              end
+              object btnRemoveSearchFilter: TButton
+                Position.X = 208.000000000000000000
+                Position.Y = 24.000000000000000000
+                Size.Width = 48.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'deleteitembutton'
+                TabOrder = 1
+                Text = 'btnRemoveSearchFilter'
+              end
+            end
+          end
+        end
+      end
+    end
+    object lbxTools: TListBox
+      Align = Client
+      Size.Width = 176.969696044921900000
+      Size.Height = 440.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxstyle'
+      TabOrder = 7
+      DisableFocusEffect = True
+      ItemHeight = 35.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 173.000000000000000000
+      Viewport.Height = 436.000000000000000000
+      object lbhMenu: TListBoxGroupHeader
+        Size.Width = 172.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxplainheader'
+        TabOrder = 1
+        Text = 'Menu'
+      end
+      object lbiInsert: TListBoxItem
+        Position.Y = 35.000000000000000000
+        Size.Width = 172.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemlabel'
+        TabOrder = 0
+        Text = 'Incluir'
+        OnClick = actInsertExecute
+      end
+      object lbiUpdate: TListBoxItem
+        Position.Y = 70.000000000000000000
+        Size.Width = 172.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemlabel'
+        TabOrder = 2
+        Text = 'Alterar'
+        OnClick = actUpdateExecute
+      end
+      object lbiDelete: TListBoxItem
+        Position.Y = 105.000000000000000000
+        Size.Width = 172.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemlabel'
+        TabOrder = 3
+        Text = 'Excluir'
+        OnClick = actDeleteExecute
+      end
+      object lbiClone: TListBoxItem
+        Position.Y = 140.000000000000000000
+        Size.Width = 172.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemlabel'
+        TabOrder = 4
+        Text = 'Duplicar'
+        OnClick = actCloneExecute
+      end
+      object lbiPrint: TListBoxItem
+        Position.Y = 175.000000000000000000
+        Size.Width = 172.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemlabel'
+        TabOrder = 5
+        Text = 'Imprimir'
+        OnClick = actIPrintExecute
+      end
+      object lbiClose: TListBoxItem
+        Position.Y = 210.000000000000000000
+        Size.Width = 172.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxitemlabel'
+        TabOrder = 6
+        Text = 'Sair'
+        OnClick = actCloseExecute
+      end
+    end
+  end
+  inherited aclActions: TActionList
+    Left = 432
+    Top = 104
+  end
+  inherited imlButtonIcons: TImageList
+    Left = 508
+    Top = 104
+  end
+  inherited dtsDados: TDataSource
+    Left = 288
+    Top = 104
+  end
+  inherited bsdDataBind: TBindSourceDB
+    Left = 352
+    Top = 104
+  end
+  object bdlList: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 228
+    Top = 101
+    object LinkGridToDataSourcebsdDataBind: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = bsdDataBind
+      GridControl = sgbSearch
+      Columns = <>
+      OnActivated = LinkGridToDataSourcebsdDataBindActivated
+    end
+  end
+end

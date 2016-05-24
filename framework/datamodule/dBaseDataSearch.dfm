@@ -1,0 +1,2 @@
+inherited dtmBaseDataSearch: TdtmBaseDataSearch
+end

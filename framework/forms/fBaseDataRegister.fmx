@@ -1,0 +1,71 @@
+inherited frmBaseDataRegister: TfrmBaseDataRegister
+  Caption = 'frmBaseData1'
+  DesignerMasterStyle = 0
+  object tlbTitle: TToolBar [0]
+    Size.Width = 640.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'toolbarstyle'
+    TabOrder = 4
+    object lblTitle: TLabel
+      Align = Contents
+      Size.Width = 640.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Registro'
+      ParentShowHint = False
+      ShowHint = False
+    end
+    object btnCancel: TButton
+      Action = actCancel
+      Align = Right
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 592.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'deletetoolbutton'
+      TabOrder = 1
+      Visible = True
+    end
+    object btnSave: TButton
+      Action = actSave
+      Align = Right
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 544.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'donetoolbutton'
+      TabOrder = 2
+      Visible = True
+    end
+  end
+  object lytLayoutRegister: TLayout [1]
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 432.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+  end
+  inherited aclActions: TActionList
+    Left = 24
+    Top = 72
+  end
+  inherited imlButtonIcons: TImageList
+    Left = 236
+    Top = 72
+  end
+  inherited dtsDados: TDataSource
+    Left = 96
+    Top = 72
+  end
+  inherited bsdDataBind: TBindSourceDB
+    Left = 152
+    Top = 72
+  end
+end
