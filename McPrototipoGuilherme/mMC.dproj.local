@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/03/17 16:32:07.000.026,=C:\Users\Guilherme Severo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/03/29 08:58:32.000.520,=C:\Users\Guilherme Severo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/05/18 14:09:57.000.739,=C:\Users\Guilherme Severo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/05/24 13:27:32.000.058,=C:\Users\Guilherme Severo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/05/24 13:27:55.000.737,=D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\class\uMethods.pas</Transaction>
+    <Transaction>2016/05/24 13:28:15.000.078,=D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\class\uSystem.pas</Transaction>
+    <Transaction>2016/05/24 13:28:33.000.370,=D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\datamodule\dBase.pas</Transaction>
+    <Transaction>2016/05/24 13:28:45.000.099,=D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\datamodule\dBaseConnection.pas</Transaction>
+    <Transaction>2016/05/24 13:29:08.000.706,=D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\datamodule\dBaseData.pas</Transaction>
+    <Transaction>2016/05/24 13:29:22.000.308,=D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\datamodule\dBaseDataSearch.pas</Transaction>
+    <Transaction>2016/05/24 13:29:47.000.357,=D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\forms\fBase.pas</Transaction>
+    <Transaction>2016/05/24 13:29:55.000.285,=D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\forms\fBaseData.pas</Transaction>
+    <Transaction>2016/05/24 13:30:07.000.333,=D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\forms\fBaseDataManage.pas</Transaction>
+    <Transaction>2016/05/24 13:30:20.000.584,=D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\forms\fBaseDataMasterDetail.pas</Transaction>
+    <Transaction>2016/05/24 13:30:41.000.138,=D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\forms\fBaseDataRegister.pas</Transaction>
+    <Transaction>2016/05/24 13:30:49.000.790,=D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\forms\fBaseDataSearch.pas</Transaction>
+    <Transaction>2016/05/24 13:30:57.000.727,=D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\forms\fBaseMain.pas</Transaction>
+    <Transaction>2016/05/24 13:31:45.000.990,C:\Users\Guilherme Severo\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\fSplash.pas</Transaction>
+    <Transaction>2016/05/24 13:31:45.000.990,C:\Users\Guilherme Severo\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\fSplash.fmx</Transaction>
+    <Transaction>2016/05/24 13:31:52.000.746,C:\Users\Guilherme Severo\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\mMC.dproj</Transaction>
+    <Transaction>2016/05/24 14:06:09.000.011,=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit2.pas</Transaction>
+    <Transaction>2016/05/24 14:06:24.000.698,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit2.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\fMain.fmx</Transaction>
+    <Transaction>2016/05/24 14:06:24.000.698,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit2.pas=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\fMain.pas</Transaction>
+    <Transaction>2016/05/24 14:13:29.000.198,=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit1.pas</Transaction>
+    <Transaction>2016/05/24 14:15:07.000.261,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\fMain.pas=</Transaction>
+    <Transaction>2016/05/24 14:15:13.000.474,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit1.pas=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\fMain.pas</Transaction>
+    <Transaction>2016/05/24 14:15:13.000.474,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\fMain.fmx</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
