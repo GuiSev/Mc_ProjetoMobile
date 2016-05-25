@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A9881467-0509-484C-9B5B-41491F502B1B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="McPrototipoVagner001.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="McPrototipoVagner001">
+        <MSBuild Projects="McPrototipoVagner001.dproj"/>
+    </Target>
+    <Target Name="McPrototipoVagner001:Clean">
+        <MSBuild Projects="McPrototipoVagner001.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="McPrototipoVagner001:Make">
+        <MSBuild Projects="McPrototipoVagner001.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="McPrototipoVagner001"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="McPrototipoVagner001:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="McPrototipoVagner001:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

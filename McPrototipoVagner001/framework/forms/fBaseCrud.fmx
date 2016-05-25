@@ -1,0 +1,246 @@
+inherited frmBaseCrud: TfrmBaseCrud
+  Caption = ''
+  ClientWidth = 300
+  DesignerMasterStyle = 0
+  object lytBase: TLayout
+    Align = Client
+    Size.Width = 300.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object tbcPrincipal: TTabControl
+      Align = Client
+      Size.Width = 300.000000000000000000
+      Size.Height = 445.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = PlatformDefault
+      object tbiListagem: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 149.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Listagem'
+        object ListView1: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Size.Width = 300.000000000000000000
+          Size.Height = 352.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnItemClick = ListView1ItemClick
+        end
+        object Layout3: TLayout
+          Align = Top
+          Size.Width = 300.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object btnNovoRegistro: TSpeedButton
+            Action = actIncluir
+            Align = Right
+            Enabled = True
+            ImageIndex = -1
+            Position.X = 260.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'addtoolbutton'
+            Visible = True
+          end
+          object btnExcluirRegistro: TSpeedButton
+            Action = actExcluir
+            Align = Right
+            Enabled = True
+            ImageIndex = -1
+            Position.X = 180.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'trashtoolbutton'
+            Visible = True
+          end
+          object btnEditarRegistro: TSpeedButton
+            Action = actEditar
+            Align = Right
+            Enabled = True
+            ImageIndex = -1
+            Position.X = 220.000000000000000000
+            Size.Width = 40.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'composetoolbutton'
+            Visible = True
+          end
+          object pnlPesquisar: TPanel
+            Position.X = 3.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 156.000000000000000000
+            Size.Height = 31.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object btnLimpaTextoPesquisa: TSpeedButton
+              Align = Right
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Position.X = 120.000000000000000000
+              Position.Y = 4.000000000000000000
+              Size.Width = 32.000000000000000000
+              Size.Height = 23.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'cleareditbutton'
+              OnClick = btnLimpaTextoPesquisaClick
+            end
+            object edtPesquisar: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Center
+              StyleLookup = 'transparentedit'
+              TabOrder = 1
+              TextSettings.HorzAlign = Center
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Size.Width = 75.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'Pesquisar'
+            end
+            object btnPesquisa: TSpeedButton
+              Align = Left
+              Margins.Left = 4.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Margins.Right = 4.000000000000000000
+              Margins.Bottom = 4.000000000000000000
+              Position.X = 4.000000000000000000
+              Position.Y = 4.000000000000000000
+              Size.Width = 33.000000000000000000
+              Size.Height = 23.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'searchtoolbutton'
+              OnClick = btnPesquisaClick
+            end
+          end
+        end
+      end
+      object tbiEdicao: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 149.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Edi'#231#227'o'
+        object Layout1: TLayout
+          Align = Bottom
+          Position.Y = 346.000000000000000000
+          Size.Width = 300.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object btnSalvar: TSpeedButton
+            Action = actSalvar
+            Align = Right
+            Enabled = True
+            ImageIndex = -1
+            Position.X = 252.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'donetoolbutton'
+            Visible = True
+          end
+        end
+        object Layout2: TLayout
+          Align = Top
+          Size.Width = 300.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object btnVoltarListagem: TSpeedButton
+            Align = Left
+            Size.Width = 48.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'priortoolbutton'
+            OnClick = btnVoltarListagemClick
+          end
+        end
+      end
+    end
+    object lytMenuAcoes: TLayout
+      Align = Top
+      Size.Width = 300.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object lblTitulo: TLabel
+        Align = Contents
+        StyledSettings = [Family, Style, FontColor]
+        Size.Width = 300.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.HorzAlign = Center
+        Text = 'lblTitulo'
+      end
+      object ShadowEffect1: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.600000023841857900
+        ShadowColor = claBlack
+      end
+      object btnVoltarMenu: TSpeedButton
+        Align = Left
+        Size.Width = 48.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'priortoolbuttonbordered'
+        OnClick = btnVoltarMenuClick
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 144
+    Top = 224
+    object actMudarAba: TChangeTabAction
+      Category = 'Tab'
+    end
+    object actSalvar: TAction
+      Category = 'Crud'
+      Text = 'Salvar'
+      OnExecute = actSalvarExecute
+    end
+    object actIncluir: TAction
+      Category = 'Crud'
+      Text = 'actIncluir'
+      OnExecute = actIncluirExecute
+    end
+    object actEditar: TAction
+      Category = 'Crud'
+      Text = 'actEditar'
+      OnExecute = actEditarExecute
+    end
+    object actExcluir: TAction
+      Category = 'Crud'
+      Text = 'actExcluir'
+      OnExecute = actExcluirExecute
+    end
+  end
+end
