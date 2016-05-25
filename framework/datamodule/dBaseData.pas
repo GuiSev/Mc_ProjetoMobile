@@ -77,6 +77,8 @@ var
 
 implementation
 
+{%CLASSGROUP 'FMX.Controls.TControl'}
+
 { %CLASSGROUP 'FMX.Controls.TControl' }
 
 {$R *.dfm}

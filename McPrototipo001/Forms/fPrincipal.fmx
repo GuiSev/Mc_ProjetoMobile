@@ -1,0 +1,17 @@
+inherited frmBaseMain1: TfrmBaseMain1
+  Caption = 'frmBaseMain1'
+  ClientWidth = 328
+  Position = ScreenCenter
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 328.000000000000000000
+  end
+  inherited aclActions: TActionList
+    Left = 176
+    Top = 192
+  end
+  inherited imlButtonIcons: TImageList
+    Left = 140
+    Top = 88
+  end
+end
