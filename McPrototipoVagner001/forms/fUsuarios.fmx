@@ -1,0 +1,70 @@
+inherited frmUsuarios: TfrmUsuarios
+  Caption = 'Usu'#225'rios'
+  DesignerMasterStyle = 0
+  inherited lytBase: TLayout
+    inherited tbcPrincipal: TTabControl
+      inherited tbiListagem: TTabItem
+        ExplicitSize.cx = 149.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+      end
+      inherited tbiEdicao: TTabItem
+        ExplicitSize.cx = 149.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited lytEdicao: TLayout
+          inherited vsbEdicao: TVertScrollBox
+            Viewport.Width = 300.000000000000000000
+            Viewport.Height = 296.000000000000000000
+            object Layout3: TLayout
+              Align = Top
+              Size.Width = 300.000000000000000000
+              Size.Height = 113.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Edit1: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 2
+                KeyboardType = NumberPad
+                Position.X = 8.000000000000000000
+                Position.Y = 16.000000000000000000
+                Size.Width = 100.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'C'#243'digo'
+              end
+              object Edit2: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 0
+                Position.X = 8.000000000000000000
+                Position.Y = 48.000000000000000000
+                Size.Width = 281.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Nome'
+              end
+              object CheckBox1: TCheckBox
+                Position.X = 216.000000000000000000
+                Position.Y = 16.000000000000000000
+                Size.Width = 80.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                Text = 'Ativo'
+              end
+              object Edit3: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 1
+                Password = True
+                Position.X = 8.000000000000000000
+                Position.Y = 80.000000000000000000
+                Size.Width = 100.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Senha'
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,35 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2016/02/24 13:45:25.000.151,=C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016/02/25 11:19:09.000.598,=C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016/02/25 16:17:27.000.657,=C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016/02/25 16:21:40.000.137,=C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016/02/26 07:46:35.000.133,=C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016/02/26 07:50:10.000.850,=C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016/02/26 13:33:36.000.031,=C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016/02/29 16:44:15.000.164,=C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016/03/22 09:53:02.000.801,=C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016/05/25 09:30:36.523,=C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016/05/25 09:31:38.329,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fPrincipal.fmx=C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2016/05/25 09:31:38.329,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fPrincipal.pas=C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2016/05/25 09:31:51.446,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\McPrototipoVagner001.dproj=C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>2016/05/25 10:07:12.353,=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit2.pas</Transaction>
-    <Transaction>2016/05/25 10:07:55.457,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBase.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit2.fmx</Transaction>
-    <Transaction>2016/05/25 10:07:55.457,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBase.pas=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit2.pas</Transaction>
-    <Transaction>2016/05/25 10:08:06.730,=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.pas</Transaction>
-    <Transaction>2016/05/25 10:08:28.415,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBaseMain.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
-    <Transaction>2016/05/25 10:08:28.415,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBaseMain.pas=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.pas</Transaction>
-    <Transaction>2016/05/25 10:16:00.454,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fPrincipal.pas=</Transaction>
-    <Transaction>2016/05/25 10:16:10.922,=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.pas</Transaction>
-    <Transaction>2016/05/25 10:16:52.039,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fPrincipal.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
-    <Transaction>2016/05/25 10:16:52.039,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fPrincipal.pas=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.pas</Transaction>
-    <Transaction>2016/05/25 10:45:15.099,=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.pas</Transaction>
-    <Transaction>2016/05/25 11:03:02.746,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBaseCrud.pas=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.pas</Transaction>
-    <Transaction>2016/05/25 11:03:02.747,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBaseCrud.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
-    <Transaction>2016/05/25 15:09:59.838,=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.pas</Transaction>
-    <Transaction>2016/05/25 15:11:15.364,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fClientes.pas=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.pas</Transaction>
-    <Transaction>2016/05/25 15:11:15.364,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fClientes.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
+    <Transaction>2016/05/25 09:31:38.000.329,C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fPrincipal.fmx</Transaction>
+    <Transaction>2016/05/25 09:31:51.000.446,C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\McPrototipoVagner001.dproj</Transaction>
+    <Transaction>2016/05/25 10:07:55.000.457,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit2.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBase.fmx</Transaction>
+    <Transaction>2016/05/25 10:08:28.000.415,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBaseMain.fmx</Transaction>
+    <Transaction>2016/05/25 10:16:52.000.039,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fPrincipal.fmx</Transaction>
+    <Transaction>2016/05/25 11:03:02.000.747,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBaseCrud.fmx</Transaction>
+    <Transaction>2016/05/25 15:11:15.000.364,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fClientes.fmx</Transaction>
+    <Transaction>2016/05/30 11:29:42.000.995,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fProdutos.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
+    <Transaction>2016/05/30 13:48:00.000.260,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fVendedores.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
+    <Transaction>2016/05/30 14:57:43.000.103,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fPedidos.fmx</Transaction>
+    <Transaction>2016/05/30 15:12:01.000.564,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fFormasPagamento.fmx</Transaction>
+    <Transaction>2016/05/30 17:25:27.802,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fUsuarios.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
+    <Transaction>2016/05/30 17:37:39.864,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fRotas.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<NoProfile iOSSimulator="iPhone5"/>

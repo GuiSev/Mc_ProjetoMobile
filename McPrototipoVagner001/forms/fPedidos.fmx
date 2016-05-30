@@ -6,6 +6,29 @@ inherited frmPedidos: TfrmPedidos
       inherited tbiListagem: TTabItem
         ExplicitSize.cx = 149.000000000000000000
         ExplicitSize.cy = 49.000000000000000000
+        inherited lytComandos: TLayout
+          Size.Width = 300.000000000000000000
+          inherited btnNovoRegistro: TSpeedButton
+            Position.X = 252.000000000000000000
+          end
+          inherited btnExcluirRegistro: TSpeedButton
+            Position.X = 156.000000000000000000
+          end
+          inherited btnEditarRegistro: TSpeedButton
+            Position.X = 204.000000000000000000
+          end
+        end
+        inherited lytFiltrosPesquisa: TLayout
+          Size.Width = 300.000000000000000000
+        end
+        inherited lytListagem: TLayout
+          Size.Width = 300.000000000000000000
+          Size.Height = 306.000000000000000000
+          inherited lswListagem: TListView
+            Size.Width = 300.000000000000000000
+            Size.Height = 306.000000000000000000
+          end
+        end
       end
       inherited tbiEdicao: TTabItem
         ExplicitSize.cx = 149.000000000000000000

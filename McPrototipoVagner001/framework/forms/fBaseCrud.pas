@@ -9,7 +9,10 @@ uses
   fBase, FMX.ListView.Types, FMX.ListView.Appearances,
   FMX.ListView.Adapters.Base, FMX.ListView, FMX.TabControl, FMX.Layouts,
   FMX.Controls.Presentation, System.Actions, FMX.ActnList, FMX.Effects,
-  FMX.Filter.Effects, FMX.Edit;
+  FMX.Filter.Effects, FMX.Edit, FMX.ListBox, FMX.DateTimeCtrls;
+
+type
+  TModoFormulario = (mfCadastro, mfPesquisa);
 
 type
   TfrmBaseCrud = class(TfrmBase)
@@ -17,17 +20,16 @@ type
     tbcPrincipal: TTabControl;
     tbiListagem: TTabItem;
     tbiEdicao: TTabItem;
-    ListView1: TListView;
     lytMenuAcoes: TLayout;
     Layout1: TLayout;
     btnSalvar: TSpeedButton;
     ActionList1: TActionList;
     actMudarAba: TChangeTabAction;
-    Layout2: TLayout;
+    lytComandosEdicaoTop: TLayout;
     btnVoltarListagem: TSpeedButton;
     lblTitulo: TLabel;
     ShadowEffect1: TShadowEffect;
-    Layout3: TLayout;
+    lytComandos: TLayout;
     btnNovoRegistro: TSpeedButton;
     btnExcluirRegistro: TSpeedButton;
     btnEditarRegistro: TSpeedButton;
@@ -40,9 +42,14 @@ type
     actIncluir: TAction;
     actEditar: TAction;
     actExcluir: TAction;
+    lytFiltrosPesquisa: TLayout;
+    lytListagem: TLayout;
+    lswListagem: TListView;
+    lytEdicao: TLayout;
+    vsbEdicao: TVertScrollBox;
     procedure btnVoltarListagemClick(Sender: TObject);
     procedure btnVoltarMenuClick(Sender: TObject);
-    procedure ListView1ItemClick(const Sender: TObject;
+    procedure lswListagemItemClick(const Sender: TObject;
       const AItem: TListViewItem);
     procedure btnLimpaTextoPesquisaClick(Sender: TObject);
     procedure btnPesquisaClick(Sender: TObject);
@@ -50,12 +57,16 @@ type
     procedure actExcluirExecute(Sender: TObject);
     procedure actSalvarExecute(Sender: TObject);
     procedure actIncluirExecute(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
+
   protected
     procedure MudarAba(ATabItem: TTabItem; Sender: TObject);
+    procedure TituloDoFormulario(ATitulo: string); virtual;
   public
     { Public declarations }
+
   end;
 
 var
@@ -122,10 +133,18 @@ end;
 procedure TfrmBaseCrud.btnVoltarMenuClick(Sender: TObject);
 begin
   inherited;
+
   frmPrincipal.MudarAba(frmPrincipal.tbiMenu, Sender);
+
 end;
 
-procedure TfrmBaseCrud.ListView1ItemClick(const Sender: TObject;
+procedure TfrmBaseCrud.FormCreate(Sender: TObject);
+begin
+  inherited;
+  tbcPrincipal.ActiveTab := tbiListagem;
+end;
+
+procedure TfrmBaseCrud.lswListagemItemClick(const Sender: TObject;
   const AItem: TListViewItem);
 begin
   inherited;
@@ -136,6 +155,11 @@ procedure TfrmBaseCrud.MudarAba(ATabItem: TTabItem; Sender: TObject);
 begin
   actMudarAba.tab := ATabItem;
   actMudarAba.ExecuteTarget(Sender);
+end;
+
+procedure TfrmBaseCrud.TituloDoFormulario(ATitulo: string);
+begin
+  lblTitulo.Text := ATitulo;
 end;
 
 end.

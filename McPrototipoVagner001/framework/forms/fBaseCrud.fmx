@@ -1,6 +1,7 @@
 inherited frmBaseCrud: TfrmBaseCrud
   Caption = ''
   ClientWidth = 300
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
   object lytBase: TLayout
     Align = Client
@@ -14,46 +15,36 @@ inherited frmBaseCrud: TfrmBaseCrud
       Size.Height = 445.000000000000000000
       Size.PlatformDefault = False
       TabHeight = 49.000000000000000000
-      TabIndex = 0
+      TabIndex = 1
       TabOrder = 0
       TabPosition = PlatformDefault
       object tbiListagem: TTabItem
         CustomIcon = <
           item
           end>
-        IsSelected = True
-        Size.Width = 149.000000000000000000
+        IsSelected = False
+        Size.Width = 67.000000000000000000
         Size.Height = 49.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = ''
         TabOrder = 0
         Text = 'Listagem'
-        object ListView1: TListView
-          ItemAppearanceClassName = 'TListItemAppearance'
-          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
-          HeaderAppearanceClassName = 'TListHeaderObjects'
-          FooterAppearanceClassName = 'TListHeaderObjects'
-          Align = Client
-          Size.Width = 300.000000000000000000
-          Size.Height = 352.000000000000000000
+        ExplicitSize.cx = 149.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object lytComandos: TLayout
+          Align = Top
+          Size.Width = 50.000000000000000000
+          Size.Height = 45.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
-          OnItemClick = ListView1ItemClick
-        end
-        object Layout3: TLayout
-          Align = Top
-          Size.Width = 300.000000000000000000
-          Size.Height = 44.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 1
           object btnNovoRegistro: TSpeedButton
             Action = actIncluir
             Align = Right
             Enabled = True
             ImageIndex = -1
-            Position.X = 260.000000000000000000
-            Size.Width = 40.000000000000000000
-            Size.Height = 44.000000000000000000
+            Position.X = 2.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 45.000000000000000000
             Size.PlatformDefault = False
             StyleLookup = 'addtoolbutton'
             Visible = True
@@ -63,9 +54,9 @@ inherited frmBaseCrud: TfrmBaseCrud
             Align = Right
             Enabled = True
             ImageIndex = -1
-            Position.X = 180.000000000000000000
-            Size.Width = 40.000000000000000000
-            Size.Height = 44.000000000000000000
+            Position.X = -94.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 45.000000000000000000
             Size.PlatformDefault = False
             StyleLookup = 'trashtoolbutton'
             Visible = True
@@ -75,9 +66,9 @@ inherited frmBaseCrud: TfrmBaseCrud
             Align = Right
             Enabled = True
             ImageIndex = -1
-            Position.X = 220.000000000000000000
-            Size.Width = 40.000000000000000000
-            Size.Height = 44.000000000000000000
+            Position.X = -46.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 45.000000000000000000
             Size.PlatformDefault = False
             StyleLookup = 'composetoolbutton'
             Visible = True
@@ -126,12 +117,37 @@ inherited frmBaseCrud: TfrmBaseCrud
               Margins.Bottom = 4.000000000000000000
               Position.X = 4.000000000000000000
               Position.Y = 4.000000000000000000
-              Size.Width = 33.000000000000000000
+              Size.Width = 32.000000000000000000
               Size.Height = 23.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'searchtoolbutton'
+              StyleLookup = 'searcheditbutton'
               OnClick = btnPesquisaClick
             end
+          end
+        end
+        object lytFiltrosPesquisa: TLayout
+          Align = Top
+          Position.Y = 45.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+        end
+        object lytListagem: TLayout
+          Align = Client
+          Size.Width = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object lswListagem: TListView
+            ItemAppearanceClassName = 'TListItemAppearance'
+            ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            Align = Client
+            Size.Width = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnItemClick = lswListagemItemClick
           end
         end
       end
@@ -139,13 +155,15 @@ inherited frmBaseCrud: TfrmBaseCrud
         CustomIcon = <
           item
           end>
-        IsSelected = False
-        Size.Width = 149.000000000000000000
+        IsSelected = True
+        Size.Width = 55.000000000000000000
         Size.Height = 49.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = ''
         TabOrder = 0
         Text = 'Edi'#231#227'o'
+        ExplicitSize.cx = 149.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
         object Layout1: TLayout
           Align = Bottom
           Position.Y = 346.000000000000000000
@@ -166,7 +184,7 @@ inherited frmBaseCrud: TfrmBaseCrud
             Visible = True
           end
         end
-        object Layout2: TLayout
+        object lytComandosEdicaoTop: TLayout
           Align = Top
           Size.Width = 300.000000000000000000
           Size.Height = 50.000000000000000000
@@ -179,6 +197,23 @@ inherited frmBaseCrud: TfrmBaseCrud
             Size.PlatformDefault = False
             StyleLookup = 'priortoolbutton'
             OnClick = btnVoltarListagemClick
+          end
+        end
+        object lytEdicao: TLayout
+          Align = Client
+          Size.Width = 300.000000000000000000
+          Size.Height = 296.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object vsbEdicao: TVertScrollBox
+            Align = Client
+            Size.Width = 300.000000000000000000
+            Size.Height = 296.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            ShowScrollBars = False
+            Viewport.Width = 300.000000000000000000
+            Viewport.Height = 296.000000000000000000
           end
         end
       end

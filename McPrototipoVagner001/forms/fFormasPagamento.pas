@@ -12,6 +12,13 @@ uses
 
 type
   TfrmFormasPagamento = class(TfrmBaseCrud)
+    Layout3: TLayout;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    CheckBox1: TCheckBox;
+    Layout2: TLayout;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
