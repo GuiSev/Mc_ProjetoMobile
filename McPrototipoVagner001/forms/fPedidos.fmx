@@ -1,0 +1,22 @@
+inherited frmPedidos: TfrmPedidos
+  Caption = 'frmBaseCrud1'
+  DesignerMasterStyle = 0
+  inherited lytBase: TLayout
+    inherited tbcPrincipal: TTabControl
+      inherited tbiListagem: TTabItem
+        ExplicitSize.cx = 149.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+      end
+      inherited tbiEdicao: TTabItem
+        ExplicitSize.cx = 149.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited lytEdicao: TLayout
+          inherited vsbEdicao: TVertScrollBox
+            Viewport.Width = 300.000000000000000000
+            Viewport.Height = 296.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

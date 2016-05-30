@@ -1,0 +1,290 @@
+inherited frmClientes: TfrmClientes
+  Caption = 'frmBaseCrud1'
+  DesignerMasterStyle = 0
+  inherited lytBase: TLayout
+    inherited tbcPrincipal: TTabControl
+      inherited tbiListagem: TTabItem
+        Size.Width = 150.000000000000000000
+        ExplicitSize.cx = 149.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited lytComandos: TLayout
+          inherited btnNovoRegistro: TSpeedButton
+            Position.X = 256.000000000000000000
+            Size.Width = 44.000000000000000000
+          end
+          inherited btnExcluirRegistro: TSpeedButton
+            Position.X = 168.000000000000000000
+            Size.Width = 44.000000000000000000
+          end
+          inherited btnEditarRegistro: TSpeedButton
+            Position.X = 212.000000000000000000
+            Size.Width = 44.000000000000000000
+          end
+          inherited pnlPesquisar: TPanel
+            inherited btnLimpaTextoPesquisa: TSpeedButton
+              Position.X = 130.000000000000000000
+              Size.Width = 22.000000000000000000
+            end
+            inherited edtPesquisar: TEdit
+              Size.Height = 29.000000000000000000
+            end
+            inherited btnPesquisa: TSpeedButton
+              Size.Width = 22.000000000000000000
+            end
+          end
+        end
+      end
+      inherited tbiEdicao: TTabItem
+        Size.Width = 150.000000000000000000
+        ExplicitSize.cx = 149.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited lytComandosEdicaoTop: TLayout
+          inherited btnVoltarListagem: TSpeedButton
+            Size.Width = 44.000000000000000000
+          end
+        end
+        inherited lytEdicao: TLayout
+          inherited vsbEdicao: TVertScrollBox
+            Viewport.Width = 300.000000000000000000
+            Viewport.Height = 296.000000000000000000
+            object Layout3: TLayout
+              Align = Top
+              Size.Width = 300.000000000000000000
+              Size.Height = 81.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Edit1: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 1
+                Position.X = 8.000000000000000000
+                Position.Y = 16.000000000000000000
+                Size.Width = 100.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'C'#243'digo'
+              end
+              object Edit2: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 0
+                Position.X = 8.000000000000000000
+                Position.Y = 48.000000000000000000
+                Size.Width = 281.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Nome'
+              end
+              object CheckBox1: TCheckBox
+                Position.X = 216.000000000000000000
+                Position.Y = 16.000000000000000000
+                Size.Width = 80.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                Text = 'Ativo'
+              end
+            end
+            object Layout2: TLayout
+              Align = Top
+              Position.Y = 185.000000000000000000
+              Size.Width = 300.000000000000000000
+              Size.Height = 74.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object RadioButton1: TRadioButton
+                Position.X = 224.000000000000000000
+                Position.Y = 8.000000000000000000
+                Size.Width = 64.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = 'F'#237'sica'
+              end
+              object RadioButton2: TRadioButton
+                Position.X = 224.000000000000000000
+                Position.Y = 32.000000000000000000
+                Size.Width = 73.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Jur'#237'dica'
+              end
+              object Edit9: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 10
+                Position.X = 8.000000000000000000
+                Position.Y = 8.000000000000000000
+                Size.Width = 121.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'CPF/CNPJ'
+              end
+              object Edit10: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 6
+                Position.X = 8.000000000000000000
+                Position.Y = 40.000000000000000000
+                Size.Width = 122.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'RG/IE'
+              end
+            end
+            object Layout4: TLayout
+              Align = Top
+              Position.Y = 81.000000000000000000
+              Size.Width = 300.000000000000000000
+              Size.Height = 104.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              object Edit3: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 10
+                Position.X = 8.000000000000000000
+                Position.Y = 8.000000000000000000
+                Size.Width = 217.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Endere'#231'o'
+              end
+              object Edit4: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 0
+                Position.X = 232.000000000000000000
+                Position.Y = 8.000000000000000000
+                Size.Width = 57.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'N'#250'mero'
+              end
+              object Edit6: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 1
+                Position.X = 157.000000000000000000
+                Position.Y = 40.000000000000000000
+                Size.Width = 133.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Cidade'
+              end
+              object Edit5: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 6
+                Position.X = 8.000000000000000000
+                Position.Y = 40.000000000000000000
+                Size.Width = 145.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Bairro'
+              end
+              object Edit8: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 2
+                Position.X = 105.000000000000000000
+                Position.Y = 71.000000000000000000
+                Size.Width = 49.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'UF'
+              end
+              object Edit7: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 4
+                Position.X = 8.000000000000000000
+                Position.Y = 71.000000000000000000
+                Size.Width = 89.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'CEP'
+              end
+            end
+            object Layout5: TLayout
+              Align = Top
+              Position.Y = 259.000000000000000000
+              Size.Width = 300.000000000000000000
+              Size.Height = 74.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              object Edit11: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 10
+                Position.X = 8.000000000000000000
+                Position.Y = 8.000000000000000000
+                Size.Width = 121.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Fone 1'
+              end
+              object Edit12: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 5
+                Position.X = 8.000000000000000000
+                Position.Y = 40.000000000000000000
+                Size.Width = 122.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Fone 2'
+              end
+              object Edit13: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 9
+                Position.X = 144.000000000000000000
+                Position.Y = 8.000000000000000000
+                Size.Width = 121.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Fone 3'
+              end
+              object Edit14: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 4
+                Position.X = 144.000000000000000000
+                Position.Y = 40.000000000000000000
+                Size.Width = 122.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Fone 4'
+              end
+            end
+            object Layout6: TLayout
+              Align = Top
+              Position.Y = 333.000000000000000000
+              Size.Width = 300.000000000000000000
+              Size.Height = 74.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              object Edit15: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 8
+                Position.X = 8.000000000000000000
+                Position.Y = 8.000000000000000000
+                Size.Width = 257.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'E-Mail'
+              end
+              object Edit16: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 4
+                Position.X = 8.000000000000000000
+                Position.Y = 40.000000000000000000
+                Size.Width = 257.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Observa'#231#245'es'
+              end
+            end
+          end
+        end
+      end
+    end
+    inherited lytMenuAcoes: TLayout
+      inherited btnVoltarMenu: TSpeedButton
+        Size.Width = 44.000000000000000000
+      end
+    end
+  end
+  inherited ActionList1: TActionList
+    Left = 264
+    Top = 384
+  end
+end
