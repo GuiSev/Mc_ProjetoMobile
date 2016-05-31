@@ -133,15 +133,15 @@ end;
 procedure TfrmBaseCrud.btnVoltarMenuClick(Sender: TObject);
 begin
   inherited;
-
   frmPrincipal.MudarAba(frmPrincipal.tbiMenu, Sender);
-
 end;
 
 procedure TfrmBaseCrud.FormCreate(Sender: TObject);
 begin
   inherited;
   tbcPrincipal.ActiveTab := tbiListagem;
+  tbcPrincipal.TabPosition := ttabposition.none;
+
 end;
 
 procedure TfrmBaseCrud.lswListagemItemClick(const Sender: TObject;
