@@ -1,19 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2016/05/25 09:31:38.000.329,C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fPrincipal.fmx</Transaction>
-    <Transaction>2016/05/25 09:31:51.000.446,C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\McPrototipoVagner001.dproj</Transaction>
-    <Transaction>2016/05/25 10:07:55.000.457,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit2.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBase.fmx</Transaction>
-    <Transaction>2016/05/25 10:08:28.000.415,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBaseMain.fmx</Transaction>
-    <Transaction>2016/05/25 10:16:52.000.039,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fPrincipal.fmx</Transaction>
-    <Transaction>2016/05/25 11:03:02.000.747,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBaseCrud.fmx</Transaction>
-    <Transaction>2016/05/25 15:11:15.000.364,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fClientes.fmx</Transaction>
-    <Transaction>2016/05/30 11:29:42.000.995,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fProdutos.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
-    <Transaction>2016/05/30 13:48:00.000.260,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fVendedores.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
-    <Transaction>2016/05/30 14:57:43.000.103,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fPedidos.fmx</Transaction>
-    <Transaction>2016/05/30 15:12:01.000.564,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fFormasPagamento.fmx</Transaction>
-    <Transaction>2016/05/30 17:25:27.802,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fUsuarios.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
-    <Transaction>2016/05/30 17:37:39.864,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fRotas.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
+    <Transaction>2016/05/25 09:31:38.000.329,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fPrincipal.fmx=C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2016/05/25 09:31:51.000.446,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\McPrototipoVagner001.dproj=C:\Users\vagne\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2016/05/25 10:07:55.000.457,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBase.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit2.fmx</Transaction>
+    <Transaction>2016/05/25 10:08:28.000.415,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBaseMain.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
+    <Transaction>2016/05/25 10:16:52.000.039,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fPrincipal.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
+    <Transaction>2016/05/25 11:03:02.000.747,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBaseCrud.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
+    <Transaction>2016/05/25 15:11:15.000.364,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fClientes.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
+    <Transaction>2016/05/30 11:29:42.000.995,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fProdutos.fmx</Transaction>
+    <Transaction>2016/05/30 13:48:00.000.260,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fVendedores.fmx</Transaction>
+    <Transaction>2016/05/30 14:57:43.000.103,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fPedidos.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
+    <Transaction>2016/05/30 15:12:01.000.564,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fFormasPagamento.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
+    <Transaction>2016/05/30 17:25:27.000.802,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fUsuarios.fmx</Transaction>
+    <Transaction>2016/05/30 17:37:39.000.864,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fRotas.fmx</Transaction>
+    <Transaction>2016/05/31 14:32:49.524,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBaseConfiguration.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
+    <Transaction>2016/05/31 14:37:45.579,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fConfiguracoes.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
+    <Transaction>2016/05/31 15:24:13.350,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\framework\forms\fBaseSincronize.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
+    <Transaction>2016/05/31 15:24:59.135,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fSincronizar.pas=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.pas</Transaction>
+    <Transaction>2016/05/31 15:24:59.135,D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\forms\fSincronizar.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoVagner001\Unit1.fmx</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
 		<NoProfile iOSSimulator="iPhone5"/>
