@@ -49,6 +49,7 @@ type
     procedure SpeedButton1Click(Sender: TObject);
     procedure SpeedButton2Click(Sender: TObject);
     procedure SpeedButton6Click(Sender: TObject);
+    procedure SpeedButton7Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -97,6 +98,12 @@ begin
   inherited;
   ShowMessage('Agora vai para aba de consulta para escolher um registro');
   MudarAba(tbiConsulta, Sender);
+end;
+
+procedure TfrmPedidos.SpeedButton7Click(Sender: TObject);
+begin
+  inherited;
+  ShowMessage('Você confirmou um produto!');
 end;
 
 procedure TfrmPedidos.SpeedButton8Click(Sender: TObject);

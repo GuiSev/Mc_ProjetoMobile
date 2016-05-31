@@ -77,6 +77,7 @@ type
     procedure actSincronizarExecute(Sender: TObject);
     procedure imgBotaoSincronizarClick(Sender: TObject);
     procedure lbiSincronizarClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -89,6 +90,8 @@ var
 implementation
 
 {$R *.fmx}
+
+uses fLogin;
 
 procedure TfrmPrincipal.actClientesExecute(Sender: TObject);
 begin
@@ -151,6 +154,13 @@ procedure TfrmPrincipal.actVendedoresExecute(Sender: TObject);
 begin
   inherited;
   AbrirForm(TFrmVendedores);
+  MudarAba(tbiApoio, Sender);
+end;
+
+procedure TfrmPrincipal.FormCreate(Sender: TObject);
+begin
+  inherited;
+   AbrirForm(TfrmLogin);
   MudarAba(tbiApoio, Sender);
 end;
 

@@ -119,6 +119,10 @@ inherited frmPedidos_XLgXhdpiTb: TfrmPedidos_XLgXhdpiTb
                 Viewport.Width = 800.000000000000000000
                 Viewport.Height = 68.000000000000000000
               end
+              inherited SpeedButton7: TSpeedButton
+                Size.Width = 48.000000000000000000
+                Size.Height = 48.000000000000000000
+              end
             end
           end
         end

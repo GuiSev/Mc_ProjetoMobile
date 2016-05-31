@@ -13,6 +13,8 @@ inherited frmSincronizar: TfrmSincronizar
         ExplicitSize.cy = 49.000000000000000000
         inherited lytListagem: TLayout
           inherited btnSincronizar: TSpeedButton
+            Position.X = 24.000000000000000000
+            Position.Y = 200.000000000000000000
             inherited imgBotaoSincronizar: TImage
               MultiResBitmap.Height = 48
               MultiResBitmap.Width = 48
@@ -141,6 +143,61 @@ inherited frmSincronizar: TfrmSincronizar
                     'nizar1\48x48.png'
                 end>
             end
+          end
+          object RadioButton1: TRadioButton
+            StyledSettings = [Family, Style, FontColor]
+            Position.X = 24.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 219.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Text = 'Clientes'
+            TextSettings.Font.Size = 14.000000000000000000
+          end
+          object RadioButton2: TRadioButton
+            StyledSettings = [Family, Style, FontColor]
+            Position.X = 24.000000000000000000
+            Position.Y = 64.000000000000000000
+            Size.Width = 219.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Text = 'Produtos'
+            TextSettings.Font.Size = 14.000000000000000000
+          end
+          object RadioButton3: TRadioButton
+            StyledSettings = [Family, Style, FontColor]
+            Position.X = 24.000000000000000000
+            Position.Y = 96.000000000000000000
+            Size.Width = 219.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Vendedores'
+            TextSettings.Font.Size = 14.000000000000000000
+          end
+          object RadioButton4: TRadioButton
+            StyledSettings = [Family, Style, FontColor]
+            Position.X = 24.000000000000000000
+            Position.Y = 128.000000000000000000
+            Size.Width = 219.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Formas de Pagamento'
+            TextSettings.Font.Size = 14.000000000000000000
+          end
+          object RadioButton5: TRadioButton
+            StyledSettings = [Family, Style, FontColor]
+            Position.X = 24.000000000000000000
+            Position.Y = 160.000000000000000000
+            Size.Width = 219.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Pedidos'
+            TextSettings.Font.Size = 14.000000000000000000
           end
         end
       end
