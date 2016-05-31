@@ -1,0 +1,17 @@
+inherited frmConfiguracoes: TfrmConfiguracoes
+  Caption = 'Configura'#231#227'o'
+  DesignerMasterStyle = 0
+  inherited lytBase: TLayout
+    inherited lytTop: TLayout
+      inherited Label1: TLabel
+        Text = 'Configura'#231#227'o'
+      end
+    end
+    inherited tbcPrincipal: TTabControl
+      inherited tbiPrincipal: TTabItem
+        ExplicitSize.cx = 149.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+      end
+    end
+  end
+end

@@ -1,0 +1,119 @@
+inherited frmProdutos_XLgXhdpiTb: TfrmProdutos_XLgXhdpiTb
+  ClientHeight = 1255
+  ClientWidth = 800
+  DesignerMasterStyle = 0
+  inherited lytBase: TLayout
+    Size.Width = 800.000000000000000000
+    Size.Height = 1255.000000000000000000
+    inherited tbcPrincipal: TTabControl
+      Size.Width = 800.000000000000000000
+      Size.Height = 1220.000000000000000000
+      inherited tbiListagem: TTabItem
+        Size.Width = 400.000000000000000000
+        ExplicitSize.cx = 149.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited lytComandos: TLayout
+          Size.Width = 800.000000000000000000
+          inherited btnNovoRegistro: TSpeedButton
+            Size.Height = 48.000000000000000000
+          end
+          inherited btnExcluirRegistro: TSpeedButton
+            Size.Height = 48.000000000000000000
+          end
+          inherited btnEditarRegistro: TSpeedButton
+            Size.Height = 48.000000000000000000
+          end
+          inherited pnlPesquisar: TPanel
+            inherited btnLimpaTextoPesquisa: TSpeedButton
+              Size.Height = 30.000000000000000000
+            end
+            inherited btnPesquisa: TSpeedButton
+              Size.Height = 32.000000000000000000
+            end
+          end
+        end
+        inherited lytFiltrosPesquisa: TLayout
+          Size.Width = 800.000000000000000000
+        end
+        inherited lytListagem: TLayout
+          Size.Width = 800.000000000000000000
+          Size.Height = 1081.000000000000000000
+          inherited lswListagem: TListView
+            Size.Width = 800.000000000000000000
+            Size.Height = 1081.000000000000000000
+          end
+        end
+      end
+      inherited tbiEdicao: TTabItem
+        Size.Width = 400.000000000000000000
+        ExplicitSize.cx = 149.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited Layout1: TLayout
+          Position.Y = 1121.000000000000000000
+          Size.Width = 800.000000000000000000
+          inherited btnSalvar: TSpeedButton
+            Position.X = 752.000000000000000000
+            Position.Y = 1.000000000000000000
+            Size.Height = 48.000000000000000000
+          end
+        end
+        inherited lytComandosEdicaoTop: TLayout
+          Size.Width = 800.000000000000000000
+          inherited btnVoltarListagem: TSpeedButton
+            Position.Y = 1.000000000000000000
+            Size.Height = 48.000000000000000000
+          end
+        end
+        inherited lytEdicao: TLayout
+          Size.Width = 800.000000000000000000
+          Size.Height = 1071.000000000000000000
+          inherited vsbEdicao: TVertScrollBox
+            Size.Width = 800.000000000000000000
+            Size.Height = 1071.000000000000000000
+            Viewport.Width = 800.000000000000000000
+            Viewport.Height = 1071.000000000000000000
+            inherited Layout2: TLayout
+              Size.Width = 800.000000000000000000
+              inherited Edit2: TEdit
+                Size.Height = 32.000000000000000000
+              end
+              inherited Edit1: TEdit
+                Size.Height = 32.000000000000000000
+              end
+            end
+            inherited Layout3: TLayout
+              Size.Width = 800.000000000000000000
+              inherited Edit3: TEdit
+                Size.Height = 32.000000000000000000
+              end
+              inherited Edit4: TEdit
+                Size.Height = 32.000000000000000000
+              end
+              inherited Edit6: TEdit
+                Size.Height = 32.000000000000000000
+              end
+              inherited Edit5: TEdit
+                Size.Height = 32.000000000000000000
+              end
+              inherited Edit7: TEdit
+                Size.Height = 32.000000000000000000
+              end
+            end
+            inherited Layout4: TLayout
+              Size.Width = 800.000000000000000000
+            end
+          end
+        end
+      end
+    end
+    inherited lytMenuAcoes: TLayout
+      Size.Width = 800.000000000000000000
+      inherited lblTitulo: TLabel
+        Size.Width = 800.000000000000000000
+      end
+      inherited btnVoltarMenu: TSpeedButton
+        Size.Height = 48.000000000000000000
+      end
+    end
+  end
+end

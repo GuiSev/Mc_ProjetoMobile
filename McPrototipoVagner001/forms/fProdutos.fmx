@@ -3,13 +3,37 @@ inherited frmProdutos: TfrmProdutos
   DesignerMasterStyle = 0
   inherited lytBase: TLayout
     inherited tbcPrincipal: TTabControl
+      TabIndex = 0
       inherited tbiListagem: TTabItem
-        Size.Width = 67.000000000000000000
+        IsSelected = True
         ExplicitSize.cx = 149.000000000000000000
         ExplicitSize.cy = 49.000000000000000000
+        inherited lytComandos: TLayout
+          Size.Width = 300.000000000000000000
+          inherited btnNovoRegistro: TSpeedButton
+            Position.X = 252.000000000000000000
+          end
+          inherited btnExcluirRegistro: TSpeedButton
+            Position.X = 156.000000000000000000
+          end
+          inherited btnEditarRegistro: TSpeedButton
+            Position.X = 204.000000000000000000
+          end
+        end
+        inherited lytFiltrosPesquisa: TLayout
+          Size.Width = 300.000000000000000000
+        end
+        inherited lytListagem: TLayout
+          Size.Width = 300.000000000000000000
+          Size.Height = 306.000000000000000000
+          inherited lswListagem: TListView
+            Size.Width = 300.000000000000000000
+            Size.Height = 306.000000000000000000
+          end
+        end
       end
       inherited tbiEdicao: TTabItem
-        Size.Width = 55.000000000000000000
+        IsSelected = False
         ExplicitSize.cx = 149.000000000000000000
         ExplicitSize.cy = 49.000000000000000000
         inherited lytEdicao: TLayout
@@ -33,7 +57,7 @@ inherited frmProdutos: TfrmProdutos
               end
               object Edit2: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
-                TabOrder = 0
+                TabOrder = 1
                 Position.X = 8.000000000000000000
                 Position.Y = 48.000000000000000000
                 Size.Width = 281.000000000000000000
@@ -43,7 +67,8 @@ inherited frmProdutos: TfrmProdutos
               end
               object Edit1: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
-                TabOrder = 1
+                TabOrder = 0
+                KeyboardType = NumberPad
                 Position.X = 8.000000000000000000
                 Position.Y = 16.000000000000000000
                 Size.Width = 100.000000000000000000
@@ -61,7 +86,7 @@ inherited frmProdutos: TfrmProdutos
               TabOrder = 1
               object Edit3: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
-                TabOrder = 9
+                TabOrder = 0
                 Position.X = 8.000000000000000000
                 Position.Y = 8.000000000000000000
                 Size.Width = 41.000000000000000000
@@ -71,7 +96,7 @@ inherited frmProdutos: TfrmProdutos
               end
               object Edit4: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
-                TabOrder = 0
+                TabOrder = 1
                 Position.X = 56.000000000000000000
                 Position.Y = 8.000000000000000000
                 Size.Width = 121.000000000000000000
@@ -81,7 +106,7 @@ inherited frmProdutos: TfrmProdutos
               end
               object Edit6: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
-                TabOrder = 1
+                TabOrder = 3
                 Position.X = 101.000000000000000000
                 Position.Y = 40.000000000000000000
                 Size.Width = 76.000000000000000000
@@ -91,7 +116,7 @@ inherited frmProdutos: TfrmProdutos
               end
               object Edit5: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
-                TabOrder = 5
+                TabOrder = 2
                 Position.X = 8.000000000000000000
                 Position.Y = 40.000000000000000000
                 Size.Width = 81.000000000000000000
@@ -101,7 +126,7 @@ inherited frmProdutos: TfrmProdutos
               end
               object Edit7: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
-                TabOrder = 3
+                TabOrder = 4
                 Position.X = 208.000000000000000000
                 Position.Y = 7.000000000000000000
                 Size.Width = 81.000000000000000000

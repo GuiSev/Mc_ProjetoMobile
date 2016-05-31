@@ -36,6 +36,7 @@ var
 implementation
 
 {$R *.fmx}
+{$R *.XLgXhdpiTb.fmx ANDROID}
 
 procedure TfrmProdutos.FormCreate(Sender: TObject);
 begin

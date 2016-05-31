@@ -1,0 +1,34 @@
+inherited frmPedidos_Macintosh: TfrmPedidos_Macintosh
+  DesignerMasterStyle = 0
+  inherited lytBase: TLayout
+    inherited tbcPrincipal: TTabControl
+      inherited tbiListagem: TTabItem
+        Size.Width = 71.000000000000000000
+        ExplicitSize.cx = 149.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+      end
+      inherited tbiEdicao: TTabItem
+        Size.Width = 58.000000000000000000
+        ExplicitSize.cx = 149.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited lytEdicao: TLayout
+          inherited vsbEdicao: TVertScrollBox
+            Viewport.Width = 300.000000000000000000
+            Viewport.Height = 296.000000000000000000
+            inherited Layout4: TLayout
+              inherited Grid1: TGrid
+                Viewport.Width = 296.000000000000000000
+                Viewport.Height = 75.000000000000000000
+              end
+            end
+          end
+        end
+      end
+      inherited tbiConsulta: TTabItem
+        Size.Width = 70.000000000000000000
+        ExplicitSize.cx = 71.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+      end
+    end
+  end
+end

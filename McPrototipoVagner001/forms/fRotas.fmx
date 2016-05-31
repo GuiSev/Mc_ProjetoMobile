@@ -14,6 +14,43 @@ inherited frmRotas: TfrmRotas
           inherited vsbEdicao: TVertScrollBox
             Viewport.Width = 300.000000000000000000
             Viewport.Height = 296.000000000000000000
+            object Layout3: TLayout
+              Align = Top
+              Size.Width = 300.000000000000000000
+              Size.Height = 81.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Edit1: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 0
+                KeyboardType = NumberPad
+                Position.X = 8.000000000000000000
+                Position.Y = 16.000000000000000000
+                Size.Width = 100.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'C'#243'digo'
+              end
+              object Edit2: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 1
+                Position.X = 8.000000000000000000
+                Position.Y = 48.000000000000000000
+                Size.Width = 281.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Nome'
+              end
+              object CheckBox1: TCheckBox
+                Position.X = 216.000000000000000000
+                Position.Y = 16.000000000000000000
+                Size.Width = 80.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                Text = 'Ativo'
+              end
+            end
           end
         end
       end

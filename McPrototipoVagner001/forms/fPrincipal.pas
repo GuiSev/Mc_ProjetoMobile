@@ -10,7 +10,7 @@ uses
   FMX.Objects, FMX.Controls.Presentation, FMX.TabControl, FMX.Effects,
   fClientes,
   System.Actions, FMX.ActnList, fProdutos, fVendedores, fPedidos,
-  fFormasPagamento, fUsuarios, fRotas;
+  fFormasPagamento, fUsuarios, fRotas, fConfiguracoes, fSincronizar;
 
 type
   TfrmPrincipal = class(TfrmBaseMain)
@@ -48,6 +48,8 @@ type
     imgBotaoRotas: TImage;
     ShadowEffect9: TShadowEffect;
     actRotas: TAction;
+    actConfiguracoes: TAction;
+    actSincronizar: TAction;
     procedure lbiClientesClick(Sender: TObject);
     procedure actClientesExecute(Sender: TObject);
     procedure imgBotaoClientesClick(Sender: TObject);
@@ -69,6 +71,12 @@ type
     procedure imgBotaoRotasClick(Sender: TObject);
     procedure lbiRotasClick(Sender: TObject);
     procedure actRotasExecute(Sender: TObject);
+    procedure actConfiguracoesExecute(Sender: TObject);
+    procedure imgBotaoConfiguracaoClick(Sender: TObject);
+    procedure lbiConfiguracaoClick(Sender: TObject);
+    procedure actSincronizarExecute(Sender: TObject);
+    procedure imgBotaoSincronizarClick(Sender: TObject);
+    procedure lbiSincronizarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -88,6 +96,13 @@ begin
   AbrirForm(TFrmClientes);
   MudarAba(tbiApoio, Sender);
 
+end;
+
+procedure TfrmPrincipal.actConfiguracoesExecute(Sender: TObject);
+begin
+  inherited;
+  AbrirForm(TfrmConfiguracoes);
+  MudarAba(tbiApoio, Sender);
 end;
 
 procedure TfrmPrincipal.actFormasPagamentoExecute(Sender: TObject);
@@ -118,6 +133,13 @@ begin
   MudarAba(tbiApoio, Sender);
 end;
 
+procedure TfrmPrincipal.actSincronizarExecute(Sender: TObject);
+begin
+  inherited;
+  AbrirForm(TfrmSincronizar);
+  MudarAba(tbiApoio, Sender);
+end;
+
 procedure TfrmPrincipal.actUsuariosExecute(Sender: TObject);
 begin
   inherited;
@@ -136,6 +158,12 @@ procedure TfrmPrincipal.imgBotaoClientesClick(Sender: TObject);
 begin
   inherited;
   actClientes.execute;
+end;
+
+procedure TfrmPrincipal.imgBotaoConfiguracaoClick(Sender: TObject);
+begin
+  inherited;
+  actConfiguracoes.execute;
 end;
 
 procedure TfrmPrincipal.imgBotaoFormasPagamentoClick(Sender: TObject);
@@ -162,6 +190,12 @@ begin
   actRotas.execute;
 end;
 
+procedure TfrmPrincipal.imgBotaoSincronizarClick(Sender: TObject);
+begin
+  inherited;
+  actSincronizar.execute;
+end;
+
 procedure TfrmPrincipal.imgBotaoUsuariosClick(Sender: TObject);
 begin
   inherited;
@@ -178,6 +212,12 @@ procedure TfrmPrincipal.lbiClientesClick(Sender: TObject);
 begin
   inherited;
   actClientes.execute;
+end;
+
+procedure TfrmPrincipal.lbiConfiguracaoClick(Sender: TObject);
+begin
+  inherited;
+  actConfiguracoes.execute;
 end;
 
 procedure TfrmPrincipal.lbiFormasPagamentoClick(Sender: TObject);
@@ -202,6 +242,12 @@ procedure TfrmPrincipal.lbiRotasClick(Sender: TObject);
 begin
   inherited;
   actRotas.execute;
+end;
+
+procedure TfrmPrincipal.lbiSincronizarClick(Sender: TObject);
+begin
+  inherited;
+  actSincronizar.execute;
 end;
 
 procedure TfrmPrincipal.lbiUsuariosClick(Sender: TObject);

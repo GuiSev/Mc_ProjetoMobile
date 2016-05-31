@@ -3,7 +3,8 @@ unit fRotas;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.Variants,
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
   fBaseCrud, FMX.ListView.Types, FMX.ListView.Appearances,
   FMX.ListView.Adapters.Base, FMX.ActnList, System.Actions, FMX.TabControl,
@@ -11,6 +12,11 @@ uses
 
 type
   TfrmRotas = class(TfrmBaseCrud)
+    Layout3: TLayout;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    CheckBox1: TCheckBox;
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,5 +29,11 @@ var
 implementation
 
 {$R *.fmx}
+
+procedure TfrmRotas.FormCreate(Sender: TObject);
+begin
+  inherited;
+  TituloDoFormulario('Rotas');
+end;
 
 end.

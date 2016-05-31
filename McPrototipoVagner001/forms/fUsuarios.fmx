@@ -3,11 +3,37 @@ inherited frmUsuarios: TfrmUsuarios
   DesignerMasterStyle = 0
   inherited lytBase: TLayout
     inherited tbcPrincipal: TTabControl
+      TabIndex = 0
       inherited tbiListagem: TTabItem
+        IsSelected = True
         ExplicitSize.cx = 149.000000000000000000
         ExplicitSize.cy = 49.000000000000000000
+        inherited lytComandos: TLayout
+          Size.Width = 300.000000000000000000
+          inherited btnNovoRegistro: TSpeedButton
+            Position.X = 252.000000000000000000
+          end
+          inherited btnExcluirRegistro: TSpeedButton
+            Position.X = 156.000000000000000000
+          end
+          inherited btnEditarRegistro: TSpeedButton
+            Position.X = 204.000000000000000000
+          end
+        end
+        inherited lytFiltrosPesquisa: TLayout
+          Size.Width = 300.000000000000000000
+        end
+        inherited lytListagem: TLayout
+          Size.Width = 300.000000000000000000
+          Size.Height = 306.000000000000000000
+          inherited lswListagem: TListView
+            Size.Width = 300.000000000000000000
+            Size.Height = 306.000000000000000000
+          end
+        end
       end
       inherited tbiEdicao: TTabItem
+        IsSelected = False
         ExplicitSize.cx = 149.000000000000000000
         ExplicitSize.cy = 49.000000000000000000
         inherited lytEdicao: TLayout
@@ -22,7 +48,7 @@ inherited frmUsuarios: TfrmUsuarios
               TabOrder = 0
               object Edit1: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
-                TabOrder = 2
+                TabOrder = 0
                 KeyboardType = NumberPad
                 Position.X = 8.000000000000000000
                 Position.Y = 16.000000000000000000
@@ -33,7 +59,7 @@ inherited frmUsuarios: TfrmUsuarios
               end
               object Edit2: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
-                TabOrder = 0
+                TabOrder = 1
                 Position.X = 8.000000000000000000
                 Position.Y = 48.000000000000000000
                 Size.Width = 281.000000000000000000
@@ -52,7 +78,7 @@ inherited frmUsuarios: TfrmUsuarios
               end
               object Edit3: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
-                TabOrder = 1
+                TabOrder = 2
                 Password = True
                 Position.X = 8.000000000000000000
                 Position.Y = 80.000000000000000000

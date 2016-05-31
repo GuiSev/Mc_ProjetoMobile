@@ -4,6 +4,7 @@ inherited frmPedidos: TfrmPedidos
   inherited lytBase: TLayout
     inherited tbcPrincipal: TTabControl
       inherited tbiListagem: TTabItem
+        Size.Width = 99.000000000000000000
         ExplicitSize.cx = 149.000000000000000000
         ExplicitSize.cy = 49.000000000000000000
         inherited lytComandos: TLayout
@@ -31,15 +32,289 @@ inherited frmPedidos: TfrmPedidos
         end
       end
       inherited tbiEdicao: TTabItem
+        Size.Width = 99.000000000000000000
         ExplicitSize.cx = 149.000000000000000000
         ExplicitSize.cy = 49.000000000000000000
         inherited lytEdicao: TLayout
           inherited vsbEdicao: TVertScrollBox
             Viewport.Width = 300.000000000000000000
             Viewport.Height = 296.000000000000000000
+            object Layout3: TLayout
+              Align = Top
+              Size.Width = 300.000000000000000000
+              Size.Height = 105.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object Edit1: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 1
+                KeyboardType = NumberPad
+                Position.X = 8.000000000000000000
+                Position.Y = 40.000000000000000000
+                Size.Width = 49.000000000000000000
+                Size.Height = 26.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Cliente'
+              end
+              object SpeedButton1: TSpeedButton
+                Position.X = 64.000000000000000000
+                Position.Y = 40.000000000000000000
+                Size.Width = 33.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'searchtoolbutton'
+                OnClick = SpeedButton1Click
+              end
+              object Label1: TLabel
+                Position.X = 110.000000000000000000
+                Position.Y = 44.000000000000000000
+                Text = 'Nome do Cliente'
+              end
+              object DateEdit1: TDateEdit
+                Date = 42521.000000000000000000
+                Position.X = 8.000000000000000000
+                Position.Y = 75.000000000000000000
+                TabOrder = 2
+              end
+              object Edit6: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 0
+                KeyboardType = NumberPad
+                Position.X = 8.000000000000000000
+                Position.Y = 8.000000000000000000
+                Size.Width = 49.000000000000000000
+                Size.Height = 26.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'CFOP'
+              end
+              object SpeedButton5: TSpeedButton
+                Position.X = 64.000000000000000000
+                Position.Y = 8.000000000000000000
+                Size.Width = 33.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'searchtoolbutton'
+                OnClick = SpeedButton5Click
+              end
+              object Label3: TLabel
+                Position.X = 110.000000000000000000
+                Position.Y = 12.000000000000000000
+                Text = 'Nome do CFOP'
+              end
+              object RadioButton1: TRadioButton
+                Position.X = 136.000000000000000000
+                Position.Y = 80.000000000000000000
+                Size.Width = 73.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                Text = 'Aberto'
+              end
+              object RadioButton2: TRadioButton
+                Position.X = 208.000000000000000000
+                Position.Y = 81.000000000000000000
+                Size.Width = 81.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 4
+                Text = 'Finalizado'
+              end
+            end
+            object Layout2: TLayout
+              Align = Top
+              Position.Y = 289.000000000000000000
+              Size.Width = 300.000000000000000000
+              Size.Height = 88.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              object Edit3: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 0
+                KeyboardType = NumberPad
+                Position.X = 8.000000000000000000
+                Position.Y = 16.000000000000000000
+                Size.Width = 49.000000000000000000
+                Size.Height = 26.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Fr. Pgto'
+              end
+              object Edit4: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 1
+                Position.X = 8.000000000000000000
+                Position.Y = 48.000000000000000000
+                Size.Width = 281.000000000000000000
+                Size.Height = 26.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Nome'
+              end
+              object SpeedButton6: TSpeedButton
+                Position.X = 64.000000000000000000
+                Position.Y = 16.000000000000000000
+                Size.Width = 25.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'searchtoolbutton'
+                OnClick = SpeedButton6Click
+              end
+              object Label4: TLabel
+                Position.X = 110.000000000000000000
+                Position.Y = 20.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Nome da Forma de Pagamento'
+              end
+            end
+            object Layout4: TLayout
+              Align = Top
+              Position.Y = 105.000000000000000000
+              Size.Width = 300.000000000000000000
+              Size.Height = 184.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object Edit5: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 0
+                KeyboardType = NumberPad
+                Position.X = 8.000000000000000000
+                Position.Y = 16.000000000000000000
+                Size.Width = 49.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Produto'
+              end
+              object SpeedButton2: TSpeedButton
+                Position.X = 64.000000000000000000
+                Position.Y = 16.000000000000000000
+                Size.Width = 41.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'searchtoolbutton'
+                OnClick = SpeedButton2Click
+              end
+              object Label2: TLabel
+                Position.X = 110.000000000000000000
+                Position.Y = 20.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Nome do Produto'
+              end
+              object SpeedButton3: TSpeedButton
+                Position.X = 8.000000000000000000
+                Position.Y = 48.000000000000000000
+                Size.Width = 48.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'additembutton'
+                Text = 'SpeedButton3'
+              end
+              object SpeedButton4: TSpeedButton
+                Position.X = 40.000000000000000000
+                Position.Y = 48.000000000000000000
+                Size.Width = 48.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'deleteitembutton'
+                Text = 'SpeedButton4'
+              end
+              object Edit2: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 1
+                Position.X = 80.000000000000000000
+                Position.Y = 53.000000000000000000
+                Size.Width = 41.000000000000000000
+                Size.Height = 26.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'Qtde'
+              end
+              object Edit7: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                TabOrder = 2
+                Position.X = 128.000000000000000000
+                Position.Y = 53.000000000000000000
+                Size.Width = 89.000000000000000000
+                Size.Height = 26.000000000000000000
+                Size.PlatformDefault = False
+                TextPrompt = 'R$ Pre'#231'o'
+              end
+              object Grid1: TGrid
+                Align = Bottom
+                Position.Y = 84.000000000000000000
+                Size.Width = 300.000000000000000000
+                Size.Height = 100.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 7
+                RowCount = 100
+                RowHeight = 21.000000000000000000
+                Viewport.Width = 296.000000000000000000
+                Viewport.Height = 75.000000000000000000
+              end
+              object SpeedButton7: TSpeedButton
+                Position.X = 222.000000000000000000
+                Position.Y = 50.000000000000000000
+                Size.Width = 48.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'donetoolbutton'
+                Text = 'Confirma'
+              end
+            end
+          end
+        end
+      end
+      object tbiConsulta: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 101.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Consulta'
+        object Layout5: TLayout
+          Align = Client
+          Size.Width = 300.000000000000000000
+          Size.Height = 346.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object ListView1: TListView
+            ItemAppearanceClassName = 'TListItemAppearance'
+            ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            Align = Client
+            Size.Width = 300.000000000000000000
+            Size.Height = 346.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+        end
+        object Layout6: TLayout
+          Align = Bottom
+          Position.Y = 346.000000000000000000
+          Size.Width = 300.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object SpeedButton8: TSpeedButton
+            Align = Right
+            Position.X = 220.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Selecionar'
+            OnClick = SpeedButton8Click
           end
         end
       end
     end
+  end
+  inherited ActionList1: TActionList
+    Left = 224
+    Top = 240
   end
 end
