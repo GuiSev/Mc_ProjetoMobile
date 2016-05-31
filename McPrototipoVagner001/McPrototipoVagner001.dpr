@@ -17,7 +17,9 @@ uses
   fBaseConfiguration in 'framework\forms\fBaseConfiguration.pas' {frmBaseConfiguration},
   fConfiguracoes in 'forms\fConfiguracoes.pas' {frmConfiguracoes},
   fBaseSincronize in 'framework\forms\fBaseSincronize.pas' {frmBaseSincronize},
-  fSincronizar in 'forms\fSincronizar.pas' {frmSincronizar};
+  fSincronizar in 'forms\fSincronizar.pas' {frmSincronizar},
+  fBaseLogin in 'framework\forms\fBaseLogin.pas' {frmBaseLogin},
+  fLogin in 'forms\fLogin.pas' {frmLogin};
 
 {$R *.res}
 
