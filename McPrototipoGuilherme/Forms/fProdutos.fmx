@@ -1,0 +1,236 @@
+inherited frmProdutos: TfrmProdutos
+  Caption = 'frmProdutos'
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  inherited lytBase: TLayout
+    inherited tbcPrincipal: TTabControl
+      inherited tbcListagem: TTabItem
+        ExplicitSize.cx = 425.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited tlbTop: TToolBar
+          inherited lblTitulo: TLabel
+            Text = 'Consulta de Produtos'
+          end
+        end
+        inherited lvListagem: TListView
+          ItemIndex = 0
+          ScrollViewPos = 110.000000000000000000
+          OnItemClick = lvListagemItemClick
+        end
+      end
+      inherited tbcEdicao: TTabItem
+        ExplicitSize.cx = 425.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited tlbEdicao: TToolBar
+          Size.Width = 850.000000000000000000
+          inherited lblTituloEdicao: TLabel
+            Size.Width = 850.000000000000000000
+            Text = 'Detalhamento do Produto'
+          end
+        end
+        object lstDetalheProdutos: TListBox
+          Align = Client
+          Size.Width = 850.000000000000000000
+          Size.Height = 683.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 850.000000000000000000
+          Viewport.Height = 683.000000000000000000
+          object lstCodigo: TListBoxGroupHeader
+            TextSettings.FontColor = claRoyalblue
+            StyledSettings = [Family, Size, Style, Other]
+            Size.Width = 850.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'C'#243'digo'
+          end
+          object lbiCodigo: TListBoxItem
+            Position.Y = 30.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            TabOrder = 5
+            Text = '755384'
+          end
+          object lstDescricao: TListBoxGroupHeader
+            TextSettings.FontColor = claRoyalblue
+            StyledSettings = [Family, Size, Style, Other]
+            Position.Y = 74.000000000000000000
+            Size.Width = 850.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Descri'#231#227'o'
+          end
+          object lbiDescricao: TListBoxItem
+            Position.Y = 104.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            TabOrder = 6
+            Text = 'Darkgoldenrod'
+          end
+          object lstReferencia: TListBoxGroupHeader
+            TextSettings.FontColor = claRoyalblue
+            StyledSettings = [Family, Size, Style, Other]
+            Position.Y = 148.000000000000000000
+            Size.Width = 850.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Text = 'Refer'#234'ncia'
+          end
+          object lbiReferencia: TListBoxItem
+            Position.Y = 178.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            TabOrder = 7
+            Text = '4290283019'
+          end
+          object lstSaldo: TListBoxGroupHeader
+            TextSettings.FontColor = claRoyalblue
+            StyledSettings = [Family, Size, Style, Other]
+            Position.Y = 222.000000000000000000
+            Size.Width = 850.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Text = 'Saldo'
+          end
+          object lbiSAldo: TListBoxItem
+            Position.Y = 252.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            TabOrder = 8
+            Text = '67'
+          end
+          object lstValor: TListBoxGroupHeader
+            TextSettings.FontColor = claRoyalblue
+            StyledSettings = [Family, Size, Style, Other]
+            Position.Y = 296.000000000000000000
+            Size.Width = 850.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Valor'
+          end
+          object lbiValor: TListBoxItem
+            Position.Y = 326.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            TabOrder = 9
+            Text = '67,67'
+          end
+        end
+      end
+    end
+  end
+  inherited actActions: TActionList
+    Left = 800
+    Top = 712
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    RecordCount = 15
+    FieldDefs = <
+      item
+        Name = 'Valor'
+        FieldType = ftCurrency
+        Generator = 'Currency'
+        ReadOnly = False
+      end
+      item
+        Name = 'Foto'
+        FieldType = ftBitmap
+        Generator = 'Bitmaps'
+        ReadOnly = False
+      end
+      item
+        Name = 'Nome'
+        Generator = 'ColorsNames'
+        ReadOnly = False
+      end
+      item
+        Name = 'Codigo'
+        FieldType = ftUInteger
+        Generator = 'Colors'
+        ReadOnly = False
+      end
+      item
+        Name = 'Saldo'
+        FieldType = ftInteger
+        Generator = 'UIntegers'
+        ReadOnly = False
+      end
+      item
+        Name = 'Referencia'
+        FieldType = ftUInteger
+        Generator = 'AlphaColors'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 696
+    Top = 713
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Nome'
+      Control = lvListagem
+      FillExpressions = <
+        item
+          SourceMemberName = 'Valor'
+          ControlMemberName = 'Detail2'
+        end
+        item
+          SourceMemberName = 'Foto'
+          ControlMemberName = 'Bitmap'
+        end
+        item
+          SourceMemberName = 'Codigo'
+          ControlMemberName = 'Detail1'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Codigo'
+      Component = lbiCodigo
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Nome'
+      Component = lbiDescricao
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText3: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Referencia'
+      Component = lbiReferencia
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText4: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Saldo'
+      Component = lbiSAldo
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText5: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Valor'
+      Component = lbiValor
+      ComponentProperty = 'Text'
+    end
+  end
+end

@@ -1,0 +1,44 @@
+inherited frmPedidos: TfrmPedidos
+  Caption = 'frmPedidos'
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  inherited lytBase: TLayout
+    inherited tbcPrincipal: TTabControl
+      inherited tbcListagem: TTabItem
+        ExplicitSize.cx = 425.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited tlbTop: TToolBar
+          inherited lblTitulo: TLabel
+            Text = 'Consulta de Pedidos'
+          end
+        end
+        inherited lvListagem: TListView
+          OnItemClick = lvListagemItemClick
+        end
+      end
+      inherited tbcEdicao: TTabItem
+        ExplicitSize.cx = 425.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited tlbEdicao: TToolBar
+          Size.Width = 850.000000000000000000
+          inherited lblTituloEdicao: TLabel
+            Size.Width = 850.000000000000000000
+            Text = 'Detalhamento do Pedido'
+          end
+        end
+        object lvDetalhePedido: TListView
+          ItemAppearanceClassName = 'TMultiDetailItemAppearance'
+          ItemEditAppearanceClassName = 'TMultiDetailDeleteAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Size.Width = 850.000000000000000000
+          Size.Height = 683.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ItemAppearanceObjects.ItemObjects.Image.Visible = True
+        end
+      end
+    end
+  end
+end

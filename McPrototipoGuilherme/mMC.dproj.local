@@ -1,12 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2016/05/24 13:31:45.000.990,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\fSplash.fmx=C:\Users\Guilherme Severo\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
-    <Transaction>2016/05/24 13:31:52.000.746,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\mMC.dproj=C:\Users\Guilherme Severo\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>2016/05/24 14:06:24.000.698,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\fMain.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit2.fmx</Transaction>
-    <Transaction>2016/05/24 14:15:13.000.474,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\fMain.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit1.fmx</Transaction>
+    <Transaction>2016/05/24 13:31:45.000.990,C:\Users\Guilherme Severo\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\fSplash.fmx</Transaction>
+    <Transaction>2016/05/24 13:31:52.000.746,C:\Users\Guilherme Severo\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\mMC.dproj</Transaction>
+    <Transaction>2016/05/24 14:06:24.000.698,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit2.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\fMain.fmx</Transaction>
+    <Transaction>2016/05/24 14:15:13.000.474,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\fMain.fmx</Transaction>
+    <Transaction>2016/06/02 13:17:46.000.364,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Forms\fInicio.fmx</Transaction>
+    <Transaction>2016/06/02 13:17:56.000.532,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\fMain.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Forms\fMain.fmx</Transaction>
+    <Transaction>2016/06/02 13:51:16.000.354,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Forms\fClientes.fmx</Transaction>
+    <Transaction>2016/06/02 15:34:40.000.040,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Forms\fModeloConsultas.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit1.fmx</Transaction>
+    <Transaction>2016/06/02 15:36:51.000.394,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Forms\fClientes.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit1.fmx</Transaction>
+    <Transaction>2016/06/03 10:12:45.000.088,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Forms\fProdutos.fmx</Transaction>
+    <Transaction>2016/06/06 14:08:34.000.294,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Forms\fPedidos.fmx</Transaction>
+    <Transaction>2016/06/06 14:12:44.000.196,D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Unit1.fmx=D:\Mc_ProjetoMobile\trunk\McPrototipoGuilherme\Forms\fNovoPedido.fmx</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<NoProfile iOSSimulator="iPhone5"/>
+		<NoProfile iOSSimulator="iPhone5" Android="f34784c0"/>
 	</ActiveMobileDevice>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="android-support-v4.dex.jar"/>
+    <File Path="apk-expansion.dex.jar"/>
+    <File Path="cloud-messaging.dex.jar"/>
+    <File Path="fmx.dex.jar"/>
+    <File Path="google-analytics-v2.dex.jar"/>
+    <File Path="google-play-billing.dex.jar"/>
+    <File Path="google-play-licensing.dex.jar"/>
+    <File Path="google-play-services.dex.jar"/>
+    <File Path="D:"/>
+    <File Path="D:\McProjetos"/>
+    <File Path="D:\McProjetos\DelphiSeattle"/>
+    <File Path="D:\McProjetos\DelphiSeattle\Projetos Internos"/>
+    <File Path="D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey"/>
+    <File Path="D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework"/>
+    <File Path="D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\class"/>
+    <File Path="D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\class\uSystem.pas"/>
+    <File Path="D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\class\uMethods.pas"/>
+    <File Path="D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\forms"/>
+    <File Path="D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\forms\fBase.pas"/>
+    <File Path="D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\forms\fBase.fmx"/>
+    <File Path="D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\forms\fBaseMain.pas"/>
+    <File Path="D:\McProjetos\DelphiSeattle\Projetos Internos\Projeto Firemonkey\framework\forms\fBaseMain.fmx"/>
+    <File Path="Forms"/>
+    <File Path="Forms\fClientes.pas"/>
+    <File Path="Forms\fClientes.fmx"/>
+    <File Path="Forms\fMain.pas"/>
+    <File Path="Forms\fMain.fmx"/>
+    <File Path="Forms\fModeloConsultas.pas"/>
+    <File Path="Forms\fModeloConsultas.fmx"/>
+    <File Path="Forms\fProdutos.pas"/>
+    <File Path="Forms\fProdutos.fmx"/>
+    <File Path="Forms\fPedidos.pas"/>
+    <File Path="Forms\fPedidos.fmx"/>
+    <File Path="Forms\fNovoPedido.pas"/>
+    <File Path="Forms\fNovoPedido.fmx"/>
+  </ProjectSortOrder>
 </BorlandProject>

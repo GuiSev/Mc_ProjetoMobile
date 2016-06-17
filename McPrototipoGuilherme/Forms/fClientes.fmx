@@ -1,0 +1,288 @@
+inherited frmClientes: TfrmClientes
+  Caption = 'ConsultaClientes'
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  inherited lytBase: TLayout
+    inherited tbcPrincipal: TTabControl
+      inherited tbcListagem: TTabItem
+        ExplicitSize.cx = 425.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited tlbTop: TToolBar
+          inherited lblTitulo: TLabel
+            Text = 'Consulta de Clientes'
+          end
+        end
+        inherited lvListagem: TListView
+          ItemIndex = 2
+          OnItemClick = lvListagemItemClick
+        end
+      end
+      inherited tbcEdicao: TTabItem
+        ExplicitSize.cx = 425.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited tlbEdicao: TToolBar
+          inherited lblTituloEdicao: TLabel
+            Text = 'Detalhamento do Cliente'
+          end
+        end
+        object lstDetalheCliente: TListBox
+          Align = Client
+          Size.Width = 50.000000000000000000
+          Size.Height = 2.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 45.000000000000000000
+          Viewport.Height = 2.000000000000000000
+          object lstCodigo: TListBoxGroupHeader
+            TextSettings.FontColor = claRoyalblue
+            StyledSettings = [Family, Size, Style, Other]
+            Size.Width = 45.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 9
+            Text = 'C'#243'digo'
+          end
+          object lbiCodigo: TListBoxItem
+            Position.Y = 30.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            TabOrder = 8
+            Text = '67'
+          end
+          object lstNome: TListBoxGroupHeader
+            TextSettings.FontColor = claRoyalblue
+            StyledSettings = [Family, Size, Style, Other]
+            Position.Y = 74.000000000000000000
+            Size.Width = 45.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Nome'
+          end
+          object lbiNome: TListBoxItem
+            Position.Y = 104.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            TabOrder = 4
+            Text = 'Mark Anderson'
+          end
+          object lstEndereco: TListBoxGroupHeader
+            TextSettings.FontColor = claRoyalblue
+            StyledSettings = [Family, Size, Style, Other]
+            Position.Y = 148.000000000000000000
+            Size.Width = 45.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Endere'#231'o'
+          end
+          object lbiEndereco: TListBoxItem
+            TextSettings.WordWrap = True
+            StyledSettings = [Family, Size, Style, FontColor]
+            Position.Y = 178.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            TabOrder = 5
+            Text = 
+              '28. non accumsan leo ullamcorper in. Praesent ultricies varius d' +
+              'olor, at ultricies felis placerat sit amet. Curabitur bibendum, ' +
+              'eros eu varius placerat, ipsum mi vehicula purus, eu congue sapi' +
+              'en orci eu est. Morbi blandit volutpat ante, non ultrices eros s' +
+              'emper at. Fusce leo leo, mollis id viverra a, pulvinar non diam.' +
+              ' Praesent ornare mauris ac magna placerat rutrum.Curabitur volut' +
+              'pat urna fermentum sem iaculis ultrices. Maecenas adipiscing sap' +
+              'ien risus, nec consectetur arcu. Sed in arcu iaculis felis place' +
+              'rat elementum vitae porta libero. Donec quis purus nisi, ac ultr' +
+              'ices lorem. Proin vitae diam id turpis rhoncus vestibulum sceler' +
+              'isque vel leo. Nulla quis scelerisque sem. Etiam imperdiet lacin' +
+              'ia nulla sit amet varius. Aliquam in interdum mauris. Praesent p' +
+              'lacerat, libero vel bibendum malesuada, velit libero vestibulum ' +
+              'erat, vel porttitor diam urna et nibh. Nullam fringilla cursus t' +
+              'empor. Cras eleifend malesuada lacus quis consectetur. Cum socii' +
+              's natoque penatibus et magnis dis parturient montes, nascetur ri' +
+              'diculus mus. Sed vestibulum bibendum sodales.Mauris consectetur ' +
+              'ipsumnon accumsan leo ullamcorper in. Praesent ultricies varius ' +
+              'dolor, at ultricies felis placerat sit amet. Curabitur bibendum,' +
+              ' eros eu varius placerat, ipsum mi vehicula purus, eu congue sap' +
+              'ien orci eu est. Morbi blandit volutpat ante, non ultrices eros ' +
+              'semper at. Fusce leo leo, mollis id viverra a, pulvinar non diam' +
+              '. Praesent ornare mauris ac magna placerat rutrum.Curabitur volu' +
+              'tpat urna fermentum sem iaculis ultrices. Maecenas adipiscing sa' +
+              'pien risus, nec consectetur arcu. Sed in arcu iaculis felis plac' +
+              'erat elementum vitae porta libero. Donec quis purus nisi, ac ult' +
+              'rices lorem. Proin vitae diam id turpis rhoncus vestibulum scele' +
+              'risque vel leo. Nulla quis scelerisque sem. Etiam imperdiet laci' +
+              'nia nulla sit amet varius. Aliquam in interdum mauris. Praesent ' +
+              'placerat, libero vel bibendum malesuada, velit libero vestibulum' +
+              ' erat, vel porttitor diam urna et nibh. Nullam fringilla cursus ' +
+              'tempor. Cras eleifend malesuada lacus quis consectetur. Cum soci' +
+              'is natoque penatibus et magnis dis parturient montes, nascetur r' +
+              'idiculus mus. Sed vestibulum bibendum sodales.Mauris consectetur' +
+              ' ipsumnon accumsan leo ullamcorper in. Praesent ultricies varius' +
+              ' dolor, at ultricies felis placerat sit amet. Curabitur bibendum' +
+              ', eros eu varius placerat, ipsum mi vehicula purus, eu congue sa' +
+              'pien orci eu est. Morbi blandit volutpat ante, non ultrices eros' +
+              ' semper at. Fusce leo leo, mollis id viverra a, pulvinar non dia' +
+              'm. Praesent ornare mauris ac magna placerat rutrum.Curabitur vol' +
+              'utpat urna fermentum sem iaculis ultrices. Maecenas adipiscing s' +
+              'apien risus, nec consectetur arcu. Sed in arcu iaculis felis pla' +
+              'cerat elementum vitae porta libero. Donec quis purus nisi, ac ul' +
+              'trices lorem. Proin vitae diam id turpis rhoncus vestibulum scel' +
+              'erisque vel leo. Nulla quis scelerisque sem. Etiam imperdiet lac' +
+              'inia nulla sit amet varius. Aliquam in interdum mauris. Praesent' +
+              ' placerat, libero vel bibendum malesuada, velit libero vestibulu' +
+              'm erat, vel porttitor diam urna et nibh. Nullam fringilla cursus' +
+              ' tempor. Cras eleifend malesuada lacus quis consectetur. Cum soc' +
+              'iis natoque penatibus et magnis dis parturient montes, nascetur ' +
+              'ridiculus mus. Sed vestibulum bibendum sodales.Mauris consectetu' +
+              'r ipsum'#13#10
+          end
+          object lstProfissao: TListBoxGroupHeader
+            TextSettings.FontColor = claRoyalblue
+            StyledSettings = [Family, Size, Style, Other]
+            Position.Y = 222.000000000000000000
+            Size.Width = 45.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Profiss'#227'o'
+          end
+          object lbiProfissao: TListBoxItem
+            Position.Y = 252.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            TabOrder = 6
+            Text = 'Software Engineer'
+          end
+          object lstDataCadastro: TListBoxGroupHeader
+            TextSettings.FontColor = claRoyalblue
+            StyledSettings = [Family, Size, Style, Other]
+            Position.Y = 296.000000000000000000
+            Size.Width = 45.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Text = 'Data Cadastro'
+          end
+          object lbiDataCadastro: TListBoxItem
+            Position.Y = 326.000000000000000000
+            StyleLookup = 'listboxitemnodetail'
+            TabOrder = 7
+            Text = '31/10/2016'
+          end
+        end
+      end
+    end
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Nome'
+      Control = lvListagem
+      FillExpressions = <
+        item
+          SourceMemberName = 'Data'
+          ControlMemberName = 'Detail1'
+        end
+        item
+          SourceMemberName = 'Profissao'
+          ControlMemberName = 'Detail2'
+        end
+        item
+          SourceMemberName = 'Foto'
+          ControlMemberName = 'Bitmap'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Nome'
+      Component = lbiNome
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Data'
+      Component = lbiDataCadastro
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText3: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Profissao'
+      Component = lbiProfissao
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText4: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Endereco'
+      Component = lbiEndereco
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText5: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'Codigo'
+      Component = lbiCodigo
+      ComponentProperty = 'Text'
+    end
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    RecordCount = 15
+    FieldDefs = <
+      item
+        Name = 'Nome'
+        Generator = 'ContactNames'
+        ReadOnly = False
+      end
+      item
+        Name = 'Data'
+        FieldType = ftDate
+        Generator = 'Date'
+        ReadOnly = False
+      end
+      item
+        Name = 'Profissao'
+        Generator = 'ContactTitles'
+        ReadOnly = False
+      end
+      item
+        Name = 'Foto'
+        FieldType = ftBitmap
+        Generator = 'ContactBitmaps'
+        ReadOnly = False
+      end
+      item
+        Name = 'Sexo'
+        FieldType = ftBoolean
+        Generator = 'Booleans'
+        ReadOnly = False
+      end
+      item
+        Name = 'Endereco'
+        FieldType = ftTStrings
+        Generator = 'LoremIpsum'
+        ReadOnly = False
+      end
+      item
+        Name = 'Codigo'
+        FieldType = ftInteger
+        Generator = 'UIntegers'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 248
+    Top = 489
+  end
+end

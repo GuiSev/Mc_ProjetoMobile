@@ -1,0 +1,126 @@
+object frmModeloConsultas: TfrmModeloConsultas
+  Left = 0
+  Top = 0
+  Caption = 'frmModeloConsultas'
+  ClientHeight = 780
+  ClientWidth = 850
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object lytBase: TLayout
+    Align = Client
+    Size.Width = 850.000000000000000000
+    Size.Height = 780.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object tbcPrincipal: TTabControl
+      Align = Client
+      Size.Width = 850.000000000000000000
+      Size.Height = 780.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = PlatformDefault
+      object tbcListagem: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 425.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Listagem'
+        ExplicitSize.cx = 425.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object tlbTop: TToolBar
+          Size.Width = 850.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object lblTitulo: TLabel
+            Align = Contents
+            Size.Width = 850.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'lblTitulo'
+          end
+          object btnVoltar: TSpeedButton
+            Align = Left
+            Margins.Left = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'backtoolbutton'
+            Text = 'Voltar'
+            OnClick = btnVoltarClick
+          end
+        end
+        object lvListagem: TListView
+          ItemAppearanceClassName = 'TMultiDetailItemAppearance'
+          ItemEditAppearanceClassName = 'TMultiDetailDeleteAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Size.Width = 850.000000000000000000
+          Size.Height = 683.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ItemAppearanceObjects.ItemObjects.Image.Visible = True
+          SearchVisible = True
+        end
+      end
+      object tbcEdicao: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 425.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Edi'#231#227'o'
+        ExplicitSize.cx = 425.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        object tlbEdicao: TToolBar
+          Size.Width = 50.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object lblTituloEdicao: TLabel
+            Align = Contents
+            Size.Width = 50.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'lblTitulo'
+          end
+          object btnVoltarListagem: TSpeedButton
+            Align = Left
+            Margins.Left = 8.000000000000000000
+            Position.X = 8.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'backtoolbutton'
+            Text = 'Voltar'
+            OnClick = btnVoltarListagemClick
+          end
+        end
+      end
+    end
+  end
+  object actActions: TActionList
+    Left = 136
+    Top = 496
+    object actMudarAba: TChangeTabAction
+      Category = 'Tab'
+    end
+  end
+end

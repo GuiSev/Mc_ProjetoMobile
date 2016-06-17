@@ -1,0 +1,72 @@
+inherited frmClientes_NmXhdpiPh: TfrmClientes_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 3
+  inherited lytBase: TLayout
+    Size.Width = 400.000000000000000000
+    Size.Height = 615.000000000000000000
+    inherited tbcPrincipal: TTabControl
+      Size.Width = 400.000000000000000000
+      Size.Height = 615.000000000000000000
+      inherited tbcListagem: TTabItem
+        Size.Width = 200.000000000000000000
+        ExplicitSize.cx = 425.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited tlbTop: TToolBar
+          Size.Width = 400.000000000000000000
+          inherited lblTitulo: TLabel
+            Size.Width = 400.000000000000000000
+          end
+        end
+        inherited lvListagem: TListView
+          Size.Width = 400.000000000000000000
+          Size.Height = 518.000000000000000000
+        end
+      end
+      inherited tbcEdicao: TTabItem
+        Size.Width = 200.000000000000000000
+        ExplicitSize.cx = 425.000000000000000000
+        ExplicitSize.cy = 49.000000000000000000
+        inherited lstDetalheCliente: TListBox
+          Viewport.Width = 400.000000000000000000
+          Viewport.Height = 518.000000000000000000
+          inherited lstCodigo: TListBoxGroupHeader
+            Size.Width = 400.000000000000000000
+          end
+          inherited lbiCodigo: TListBoxItem
+            Margins.Left = 10.000000000000000000
+            Position.X = 10.000000000000000000
+          end
+          inherited lstNome: TListBoxGroupHeader
+            Size.Width = 400.000000000000000000
+          end
+          inherited lbiNome: TListBoxItem
+            Margins.Left = 10.000000000000000000
+            Position.X = 10.000000000000000000
+          end
+          inherited lstEndereco: TListBoxGroupHeader
+            Size.Width = 400.000000000000000000
+          end
+          inherited lbiEndereco: TListBoxItem
+            Margins.Left = 10.000000000000000000
+            Position.X = 10.000000000000000000
+          end
+          inherited lstProfissao: TListBoxGroupHeader
+            Size.Width = 400.000000000000000000
+          end
+          inherited lbiProfissao: TListBoxItem
+            Margins.Left = 10.000000000000000000
+            Position.X = 10.000000000000000000
+          end
+          inherited lstDataCadastro: TListBoxGroupHeader
+            Size.Width = 400.000000000000000000
+          end
+          inherited lbiDataCadastro: TListBoxItem
+            Margins.Left = 10.000000000000000000
+            Position.X = 10.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end
