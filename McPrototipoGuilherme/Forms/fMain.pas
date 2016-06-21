@@ -8,7 +8,8 @@ uses
   fBaseMain, FMX.Objects, System.ImageList, FMX.ImgList, System.Actions, FMX.ActnList,
   FMX.Controls.Presentation, FMX.MultiView, FMX.Layouts, FMX.ListBox, FMX.TabControl,
   fClientes, fProdutos, FMX.Helpers.Android, Androidapi.Helpers, FMX.Ani,
-  fPedidos, fNovoPedido, FMX.VirtualKeyboard, FMX.platform, FMX.platform.Android;
+  fPedidos, fNovoPedido, FMX.VirtualKeyboard, FMX.platform, FMX.platform.Android,
+  FMX.Edit;
 
 type
   TfrmMain = class(TfrmBaseMain)
@@ -60,14 +61,9 @@ type
     procedure actSairExecute(Sender: TObject);
     procedure actPedidosExecute(Sender: TObject);
     procedure actNovoPedidoExecute(Sender: TObject);
-    procedure FormVirtualKeyboardHidden(Sender: TObject; KeyboardVisible: Boolean; const [Ref] Bounds: TRect);
-    procedure FormVirtualKeyboardShown(Sender: TObject; KeyboardVisible: Boolean; const [Ref] Bounds: TRect);
   private
     { Private declarations }
     FActiveForm: TForm;
-    FTecladoShow: Boolean;
-    procedure KeyboradHide;
-    function KeyboradShowing: boolean;
   public
     { Public declarations }
     procedure MudarAba(pTabItem: TTabItem; Sender: TObject);
@@ -168,61 +164,75 @@ end;
 
 procedure TfrmMain.FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char; Shift: TShiftState);
 var
-  lCanClose: Boolean;
-  lService: IFMXVirtualKeyboardService;
+  lKeyBoardService: IFMXVirtualKeyboardService;
 begin
   inherited;
-  TPlatformServices.Current.SupportsPlatformService(IFMXVirtualKeyboardService, IInterface(lService));
+  TPlatformServices.Current.SupportsPlatformService(IFMXVirtualKeyboardService, IInterface(lKeyBoardService));
 
-  if Key = vkHardwareBack then
+  if Key = vkHardwareBack then // Tecla de Voltar
   begin
-    Key := 0;
-    if KeyboradShowing then
-      KeyboradHide
-    else if tbcPrincipal.ActiveTab <> tbcMenu then
-      MudarAba(tbcMenu, Sender)
-  end
-  else if Key = vkMenu then
-    mlvMenu.ShowMaster;
-end;
-
-procedure TfrmMain.FormVirtualKeyboardHidden(Sender: TObject; KeyboardVisible: Boolean; const [Ref] Bounds: TRect);
-begin
-  inherited;
-  FTecladoShow := false;
-
-  if not KeyboardVisible then
-    AnimateFloat('Padding.Top', 0, 0.1);
-end;
-
-procedure TfrmMain.FormVirtualKeyboardShown(Sender: TObject; KeyboardVisible: Boolean; const [Ref] Bounds: TRect);
-var
-  O: TFMXObject;
-begin
-  inherited;
-  FTecladoShow := true;
-
-  if Assigned(Focused) and (Focused.GetObject is TControl) then
-//    if TControl(Focused).AbsoluteRect.Bottom - Padding.Top >= (Bounds.Top - DoneBarHeight) then
-    if TControl(Focused).AbsoluteRect.Bottom - Padding.Top >= (Bounds.Top) then
+    // Se o VirtualKeyBoard estiver aberto o próprio android executa o fechamento.
+    if not ((lKeyBoardService <> nil) and (TVirtualKeyboardState.Visible in lKeyBoardService.VirtualKeyBoardState)) then
     begin
-             //If switching between controls, the KeyboardHidden animation will run first
-             //and we'll see the form scroll up and then down.
-             //Calling StopPropertyAnimation jumps the first animation to it's final value - same problem
-             //Instead we need to search for the other animation and call StopAtCurrent.
-      for O in Children do
-        if (O is TFloatAnimation) and (TFloatAnimation(O).PropertyName = 'Padding.Top') then
-          TFloatAnimation(O).StopAtCurrent;
+    // caso estiver fechado Executará as seguintes validações:
+      if mlvMenu.IsShowed then // MultiView Aberto
+        mlvMenu.HideMaster // Fechar MultiView
+      else if tbcPrincipal.ActiveTab <> tbcMenu then // Não está na Página inicial
+        MudarAba(tbcMenu, Sender); // Voltar para página inicial
 
-//      AnimateFloat('Padding.Top', Bounds.Top - DoneBarHeight - TControl(Focused).AbsoluteRect.Bottom + Padding.Top, 0.1)
-      AnimateFloat('Padding.Top', Bounds.Top - TControl(Focused).AbsoluteRect.Bottom + Padding.Top, 0.1)
-    end
-    else
-
-
-  else
-    AnimateFloat('Padding.Top', 0, 0.1);
+      Key := 0; // Bloqueia qualquer ação do Botão Voltar
+    end;
+  end
+  else if Key = vkMenu then  //Tecla de Menu
+  begin
+    if not ((lKeyBoardService <> nil) and (TVirtualKeyboardState.Visible in lKeyBoardService.VirtualKeyBoardState)) then
+    begin  // Se o VirtualKeyBoard não estiver aberto:
+      if mlvMenu.IsShowed then   // MultiView Aberto
+        mlvMenu.HideMaster  //Fechar MultiView
+      else
+        mlvMenu.ShowMaster; //Abre MultiView
+    end;
+    Key := 0; // Não deixa executar nenhuma ação diferente da programada.
+  end;
 end;
+//
+//procedure TfrmMain.FormVirtualKeyboardHidden(Sender: TObject; KeyboardVisible: Boolean; const [Ref] Bounds: TRect);
+//begin
+//  inherited;
+//  FTecladoShow := false;
+//
+//  if not KeyboardVisible then
+//    AnimateFloat('Padding.Top', 0, 0.1);
+//end;
+//
+//procedure TfrmMain.FormVirtualKeyboardShown(Sender: TObject; KeyboardVisible: Boolean; const [Ref] Bounds: TRect);
+//var
+//  O: TFMXObject;
+//begin
+//  inherited;
+//  FTecladoShow := true;
+//
+//  if Assigned(Focused) and (Focused.GetObject is TControl) then
+////    if TControl(Focused).AbsoluteRect.Bottom - Padding.Top >= (Bounds.Top - DoneBarHeight) then
+//    if TControl(Focused).AbsoluteRect.Bottom - Padding.Top >= (Bounds.Top) then
+//    begin
+//             //If switching between controls, the KeyboardHidden animation will run first
+//             //and we'll see the form scroll up and then down.
+//             //Calling StopPropertyAnimation jumps the first animation to it's final value - same problem
+//             //Instead we need to search for the other animation and call StopAtCurrent.
+//      for O in Children do
+//        if (O is TFloatAnimation) and (TFloatAnimation(O).PropertyName = 'Padding.Top') then
+//          TFloatAnimation(O).StopAtCurrent;
+//
+////      AnimateFloat('Padding.Top', Bounds.Top - DoneBarHeight - TControl(Focused).AbsoluteRect.Bottom + Padding.Top, 0.1)
+//      AnimateFloat('Padding.Top', Bounds.Top - TControl(Focused).AbsoluteRect.Bottom + Padding.Top, 0.1)
+//    end
+//    else
+//
+//
+//  else
+//    AnimateFloat('Padding.Top', 0, 0.1);
+//end;
 
 procedure TfrmMain.lbiInicioClick(Sender: TObject);
 begin
@@ -235,26 +245,6 @@ procedure TfrmMain.MudarAba(pTabItem: TTabItem; Sender: TObject);
 begin
   actMudarAba.Tab := pTabItem;
   actMudarAba.ExecuteTarget(Sender);
-end;
-
-procedure TfrmMain.KeyboradHide; // esconde teclado
-{ uses FMX.VirtualKeyboard }
-var
-  Keyboard: IFMXVirtualKeyboardService;
-begin
-  TFmxObject.SupportsPlatformService(IFMXVirtualKeyboardService, IInterface(Keyboard));
-  if (Keyboard <> nil) then
-    Keyboard.HideVirtualKeyboard;
-end;
-
-function TfrmMain.KeyboradShowing: boolean; // teclado visivel ou não
-{ uses FMX.VirtualKeyboard }
-var
-  Keyboard: IFMXVirtualKeyboardService;
-begin
-  TFmxObject.SupportsPlatformService(IFMXVirtualKeyboardService, IInterface(Keyboard));
-  if (Keyboard <> nil) then
-    result := TVirtualKeyBoardState.Visible in Keyboard.GetVirtualKeyBoardState;
 end;
 
 end.
