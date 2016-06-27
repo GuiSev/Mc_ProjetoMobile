@@ -19,7 +19,5 @@ uses
 begin
   Application.Initialize;
   Application.CreateForm(TfrmMain, frmMain);
-  Application.CreateForm(TfrmPedidos, frmPedidos);
-  Application.CreateForm(TfrmNovoPedido, frmNovoPedido);
   Application.Run;
 end.
