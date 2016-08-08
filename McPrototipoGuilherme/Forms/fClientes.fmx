@@ -11,6 +11,17 @@ inherited frmClientes: TfrmClientes
           inherited lblTitulo: TLabel
             Text = 'Consulta de Clientes'
           end
+          object btnNavegarAteCliente: TSpeedButton
+            Align = Right
+            Margins.Right = 10.000000000000000000
+            Position.X = 792.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'bookmarkstoolbutton'
+            Text = 'Voltar'
+            OnClick = btnNavegarAteClienteClick
+          end
         end
         inherited lvListagem: TListView
           ItemIndex = 2
@@ -21,26 +32,28 @@ inherited frmClientes: TfrmClientes
         ExplicitSize.cx = 425.000000000000000000
         ExplicitSize.cy = 49.000000000000000000
         inherited tlbEdicao: TToolBar
+          Size.Width = 850.000000000000000000
           inherited lblTituloEdicao: TLabel
+            Size.Width = 850.000000000000000000
             Text = 'Detalhamento do Cliente'
           end
         end
         object lstDetalheCliente: TListBox
           Align = Client
-          Size.Width = 50.000000000000000000
-          Size.Height = 2.000000000000000000
+          Size.Width = 850.000000000000000000
+          Size.Height = 683.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 1
           DisableFocusEffect = True
           DefaultItemStyles.ItemStyle = ''
           DefaultItemStyles.GroupHeaderStyle = ''
           DefaultItemStyles.GroupFooterStyle = ''
-          Viewport.Width = 45.000000000000000000
-          Viewport.Height = 2.000000000000000000
+          Viewport.Width = 850.000000000000000000
+          Viewport.Height = 683.000000000000000000
           object lstCodigo: TListBoxGroupHeader
             TextSettings.FontColor = claRoyalblue
             StyledSettings = [Family, Size, Style, Other]
-            Size.Width = 45.000000000000000000
+            Size.Width = 850.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 9
@@ -56,7 +69,7 @@ inherited frmClientes: TfrmClientes
             TextSettings.FontColor = claRoyalblue
             StyledSettings = [Family, Size, Style, Other]
             Position.Y = 74.000000000000000000
-            Size.Width = 45.000000000000000000
+            Size.Width = 850.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
@@ -72,7 +85,7 @@ inherited frmClientes: TfrmClientes
             TextSettings.FontColor = claRoyalblue
             StyledSettings = [Family, Size, Style, Other]
             Position.Y = 148.000000000000000000
-            Size.Width = 45.000000000000000000
+            Size.Width = 850.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 1
@@ -142,7 +155,7 @@ inherited frmClientes: TfrmClientes
             TextSettings.FontColor = claRoyalblue
             StyledSettings = [Family, Size, Style, Other]
             Position.Y = 222.000000000000000000
-            Size.Width = 45.000000000000000000
+            Size.Width = 850.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 2
@@ -158,7 +171,7 @@ inherited frmClientes: TfrmClientes
             TextSettings.FontColor = claRoyalblue
             StyledSettings = [Family, Size, Style, Other]
             Position.Y = 296.000000000000000000
-            Size.Width = 45.000000000000000000
+            Size.Width = 850.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 3
@@ -284,5 +297,11 @@ inherited frmClientes: TfrmClientes
     ScopeMappings = <>
     Left = 248
     Top = 489
+  end
+  object LocationSensor1: TLocationSensor
+    Distance = 1.000000000000000000
+    OnLocationChanged = LocationSensor1LocationChanged
+    Left = 648
+    Top = 249
   end
 end

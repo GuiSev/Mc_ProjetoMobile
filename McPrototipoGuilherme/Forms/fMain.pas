@@ -9,7 +9,9 @@ uses
   FMX.Controls.Presentation, FMX.MultiView, FMX.Layouts, FMX.ListBox, FMX.TabControl,
   fClientes, fProdutos, FMX.Helpers.Android, Androidapi.Helpers, FMX.Ani,
   fPedidos, fNovoPedido, FMX.VirtualKeyboard, FMX.platform, FMX.platform.Android,
-  FMX.Edit;
+  FMX.Edit, Androidapi.JNI.JavaTypes, Androidapi.JNIBridge, Androidapi.JNI.GraphicsContentViewText,
+  Androidapi.JNI.Net, Androidapi.JNI.Os, Androidapi.IOUtils, Androidapi.Jni.App,
+  IdURI, FMX.ExtCtrls;
 
 type
   TfrmMain = class(TfrmBaseMain)
@@ -53,6 +55,14 @@ type
     imgLogo: TImage;
     actPedidos: TAction;
     actNovoPedido: TAction;
+    lbiEncontreAMC: TListBoxItem;
+    actEncontreAMC: TAction;
+    actNosEncontre: TAction;
+    lstSiganos: TListBoxGroupHeader;
+    lbiFacebook: TListBoxItem;
+    lbiTwitter: TListBoxItem;
+    lbiGoogle: TListBoxItem;
+    imgFundo: TImageViewer;
     procedure FormCreate(Sender: TObject);
     procedure lbiInicioClick(Sender: TObject);
     procedure actClientesExecute(Sender: TObject);
@@ -63,9 +73,12 @@ type
     procedure actNovoPedidoExecute(Sender: TObject);
     procedure FormVirtualKeyboardHidden(Sender: TObject; KeyboardVisible: Boolean; const [Ref] Bounds: TRect);
     procedure FormVirtualKeyboardShown(Sender: TObject; KeyboardVisible: Boolean; const [Ref] Bounds: TRect);
+    procedure actEncontreAMCExecute(Sender: TObject);
+    procedure actNosEncontreExecute(Sender: TObject);
   private
     { Private declarations }
     FActiveForm: TForm;
+    procedure ScaleImage;
   public
     { Public declarations }
     procedure MudarAba(pTabItem: TTabItem; Sender: TObject);
@@ -121,6 +134,23 @@ begin
   MudarAba(tbcApoio, Sender); // Muda Aba do Menu para o Apoio(NovoForm);
 end;
 
+procedure TfrmMain.actEncontreAMCExecute(Sender: TObject);
+var
+  lUrl: string;
+  lIntent: JIntent;
+begin
+  inherited;
+  lUrl := 'geo://0,0?q=R. Três de Outubro, 715 - Olaria - Camaquã - RS, 96180-000';
+  try
+    lIntent := TJIntent.JavaClass.init(TJIntent.JavaClass.ACTION_VIEW);
+    lIntent.setData(TJnet_Uri.JavaClass.parse(StringToJString(TIdURI.URLEncode(lUrl))));
+    SharedActivity.startActivity(lIntent);
+  except
+    on E: Exception do
+      ShowMessage(E.Message);
+  end;
+end;
+
 procedure TfrmMain.actNovoPedidoExecute(Sender: TObject);
 begin
   inherited;
@@ -149,6 +179,32 @@ begin
 
   AbrirForm(TfrmProdutos);
   MudarAba(tbcApoio, Sender);
+end;
+
+procedure TfrmMain.actNosEncontreExecute(Sender: TObject);
+var
+  lUrl: string;
+  lIntent: JIntent;
+begin
+  inherited;
+
+  if TListBoxItem(Sender).Name = 'lbiFacebook' then
+    lUrl := 'https://www.facebook.com/mcsistemascq'
+  else if TListBoxItem(Sender).Name = 'lbiGoogle' then
+    lUrl := 'https://plus.google.com/102619482455880324129/posts'
+  else if TListBoxItem(Sender).Name = 'lbiTwitter' then
+    lUrl := 'https://twitter.com/MCSistemas_'
+  else if TListBoxItem(Sender).Name = 'lbiEncontreAMC' then
+    lUrl := 'geo://0,0?q=R. Três de Outubro, 715 - Olaria - Camaquã - RS, 96180-000';
+
+  try
+    lIntent := TJIntent.JavaClass.init(TJIntent.JavaClass.ACTION_VIEW);
+    lIntent.setData(TJnet_Uri.JavaClass.parse(StringToJString(TIdURI.URLEncode(lUrl))));
+    SharedActivity.startActivity(lIntent);
+  except
+    on E: Exception do
+      ShowMessage(E.Message);
+  end;
 end;
 
 procedure TfrmMain.actSairExecute(Sender: TObject);
@@ -226,6 +282,7 @@ begin
     end
     else
 
+
   else
     AnimateFloat('Padding.Top', 0, 0.1);
 end;
@@ -241,6 +298,20 @@ procedure TfrmMain.MudarAba(pTabItem: TTabItem; Sender: TObject);
 begin
   actMudarAba.Tab := pTabItem;
   actMudarAba.ExecuteTarget(Sender);
+end;
+
+procedure TfrmMain.ScaleImage;
+var
+  lScaleNova: Single;
+begin
+// imgFundo.WrapMode := TImageWrapMode.iwOriginal;
+  lScaleNova := imgFundo.Height / imgFundo.Bitmap.Height;
+
+  if (imgFundo.Width / imgFundo.Bitmap.Width) < lScaleNova then
+    lScaleNova := imgFundo.Width / imgFundo.Bitmap.Width;
+
+  imgFundo.Scale.X := lScaleNova;
+  imgFundo.Scale.Y := lScaleNova;
 end;
 
 end.

@@ -159,6 +159,15 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="Android\Debug\classes.dex" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>mMC\classes\</RemoteDir>
+            <RemoteName>classes.dex</RemoteName>
+            <DeployClass>AndroidClassesDexFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="$(BDS)\lib\android\debug\x86\libnative-activity.so" Condition="'$(Config)'=='Debug'">
             <RemoteDir>mMC\library\lib\x86\</RemoteDir>
             <RemoteName>libmMC.so</RemoteName>
@@ -177,28 +186,19 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>mMC\library\lib\armeabi-v7a\</RemoteDir>
-            <RemoteName>gdbserver</RemoteName>
-            <DeployClass>AndroidGDBServer</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="Android\Debug\classes.dex" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>mMC\classes\</RemoteDir>
-            <RemoteName>classes.dex</RemoteName>
-            <DeployClass>AndroidClassesDexFile</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
         <DeployFile Include="Android\Debug\splash_image_def.xml" Condition="'$(Config)'=='Debug'">
             <RemoteDir>mMC\res\drawable\</RemoteDir>
             <RemoteName>splash_image_def.xml</RemoteName>
             <DeployClass>AndroidSplashImageDef</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(NDKBasePath)\prebuilt\android-arm\gdbserver\gdbserver" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>mMC\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>gdbserver</RemoteName>
+            <DeployClass>AndroidGDBServer</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
