@@ -19,6 +19,7 @@ inherited frmClientes_NmXhdpiPh: TfrmClientes_NmXhdpiPh
           end
           inherited btnNavegarAteCliente: TSpeedButton
             Margins.Left = 8.000000000000000000
+            Position.X = 342.000000000000000000
           end
         end
         inherited lvListagem: TListView
@@ -30,15 +31,7 @@ inherited frmClientes_NmXhdpiPh: TfrmClientes_NmXhdpiPh
         Size.Width = 200.000000000000000000
         ExplicitSize.cx = 425.000000000000000000
         ExplicitSize.cy = 49.000000000000000000
-        inherited tlbEdicao: TToolBar
-          Size.Width = 400.000000000000000000
-          inherited lblTituloEdicao: TLabel
-            Size.Width = 400.000000000000000000
-          end
-        end
         inherited lstDetalheCliente: TListBox
-          Size.Width = 400.000000000000000000
-          Size.Height = 518.000000000000000000
           Viewport.Width = 400.000000000000000000
           Viewport.Height = 518.000000000000000000
           inherited lstCodigo: TListBoxGroupHeader

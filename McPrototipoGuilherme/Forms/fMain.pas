@@ -78,7 +78,6 @@ type
   private
     { Private declarations }
     FActiveForm: TForm;
-    procedure ScaleImage;
   public
     { Public declarations }
     procedure MudarAba(pTabItem: TTabItem; Sender: TObject);
@@ -298,20 +297,6 @@ procedure TfrmMain.MudarAba(pTabItem: TTabItem; Sender: TObject);
 begin
   actMudarAba.Tab := pTabItem;
   actMudarAba.ExecuteTarget(Sender);
-end;
-
-procedure TfrmMain.ScaleImage;
-var
-  lScaleNova: Single;
-begin
-// imgFundo.WrapMode := TImageWrapMode.iwOriginal;
-  lScaleNova := imgFundo.Height / imgFundo.Bitmap.Height;
-
-  if (imgFundo.Width / imgFundo.Bitmap.Width) < lScaleNova then
-    lScaleNova := imgFundo.Width / imgFundo.Bitmap.Width;
-
-  imgFundo.Scale.X := lScaleNova;
-  imgFundo.Scale.Y := lScaleNova;
 end;
 
 end.
